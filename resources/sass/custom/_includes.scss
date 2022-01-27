@@ -1,6 +1,17 @@
+aside {
+    border-bottom: 1px solid #525252;
+}
+
 .dropdown-toggle::after {
     content: url("/assets/imgs/vectors/down-caret.svg");
 
     border: none;
     vertical-align: 0.095em;
 }
+
+.dropdown-toggle::before {
+    content: url("/assets/imgs/vectors/elipse-secondary.svg");
+
+    vertical-align: 0.095em;
+}
+
