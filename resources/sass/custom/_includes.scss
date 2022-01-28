@@ -15,3 +15,28 @@ aside {
     vertical-align: 0.095em;
 }
 
+footer {
+
+
+    img {
+        margin-left: -16px;
+        @include media-breakpoint-up(lg) {
+            margin-left: -8px;
+        }
+    }
+
+    div.position-absolute {
+        bottom: 387px;
+
+        @include media-breakpoint-up(sm) {
+            bottom: 220px;
+        }
+
+        p {
+            @include media-breakpoint-up(lg) {
+                font-family: "Archivo", sans-serif;
+                font-weight: normal;
+            }
+        }
+    }
+}
