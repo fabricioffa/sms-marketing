@@ -95,27 +95,28 @@
                     da marketing.</p>
             </header>
 
-            <ul class="nav nav-tabs justify-content-between border-0 gap-5 gap-xxl-0 mt-5" id="statistics-tablist" role="tablist">
+            <ul class="nav nav-tabs d-none d-lg-flex justify-content-between border-0 gap-5 gap-xxl-0 mt-5" id="statistics-tablist"
+                role="tablist">
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/earth.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active" id="panel-1-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-1" type="button" role="tab" aria-controls="panel-1"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active" id="panel-1-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-1" type="button" role="tab" aria-controls="panel-1"
                         aria-selected="true">Estatísticas globais</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/tv.svg') }}" alt="" aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-2" type="button" role="tab" aria-controls="panel-2"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-2" type="button" role="tab" aria-controls="panel-2"
                         aria-selected="false">Diagramas completos</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/euro.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-3" type="button" role="tab" aria-controls="panel-3"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-3" type="button" role="tab" aria-controls="panel-3"
                         aria-selected="false">Discriminação de
                         custos</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
@@ -123,8 +124,8 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/graphics.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-4-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-4" type="button" role="tab" aria-controls="panel-4"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-4-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-4" type="button" role="tab" aria-controls="panel-4"
                         aria-selected="false">Estatísticas por
                         país</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
@@ -132,22 +133,22 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/calendar.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-5-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-5" type="button" role="tab" aria-controls="panel-5"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-5-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-5" type="button" role="tab" aria-controls="panel-5"
                         aria-selected="false">Calendário de envios</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/upload.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-6-tab" data-bs-toggle="tab"
-                        data-bs-target="#panel-6" type="button" role="tab" aria-controls="panel-6"
+                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-6-tab"
+                        data-bs-toggle="tab" data-bs-target="#panel-6" type="button" role="tab" aria-controls="panel-6"
                         aria-selected="false">Estado do envio</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
                 </li>
             </ul>
 
-            <div class="tab-content mt-6" id="statistics-tablist-content">
+            <div class="tab-content d-none d-lg-block mt-6" id="statistics-tablist-content">
                 <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5 show active" id="panel-1" role="tabpanel"
                     aria-labelledby="panel-1-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
@@ -160,10 +161,12 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-1.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-1.png') }}" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-2" role="tabpanel" aria-labelledby="panel-2-tab">
+                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-2" role="tabpanel"
+                    aria-labelledby="panel-2-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
                         <div class="text-1415 ps-lg-2">
                             <h4 class="fs-20-24 fw-500 mb-4">Diagramas completos</h4>
@@ -174,10 +177,12 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-2.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-2.png') }}" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-3" role="tabpanel" aria-labelledby="panel-3-tab">
+                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-3" role="tabpanel"
+                    aria-labelledby="panel-3-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
                         <div class="text-1415 ps-lg-2">
                             <h4 class="fs-20-24 fw-500 mb-4">Discriminação de custos</h4>
@@ -188,10 +193,12 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-3.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-3.png') }}" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-4" role="tabpanel" aria-labelledby="panel-4-tab">
+                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-4" role="tabpanel"
+                    aria-labelledby="panel-4-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
                         <div class="text-1415 ps-lg-2">
                             <h4 class="fs-20-24 fw-500 mb-4">Estatísticas por país</h4>
@@ -202,10 +209,12 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-4.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-4.png') }}" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-5" role="tabpanel" aria-labelledby="panel-5-tab">
+                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-5" role="tabpanel"
+                    aria-labelledby="panel-5-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
                         <div class="text-1415 ps-lg-2">
                             <h4 class="fs-20-24 fw-500 mb-4">Calendário de envios</h4>
@@ -216,10 +225,13 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-5.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-5.png') }}"
+                                alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-6" role="tabpanel" aria-labelledby="panel-6-tab">
+                <div class="tab-pane fade bg-edeef0 rounded-30 pt-4 pb-5" id="panel-6" role="tabpanel"
+                    aria-labelledby="panel-6-tab">
                     <div class="col-10 d-flex justify-content-between align-items-center py-5 mx-auto">
                         <div class="text-1415 ps-lg-2">
                             <h4 class="fs-20-24 fw-500 mb-4">Estado do envio</h4>
@@ -230,9 +242,153 @@
                                 libero porro tenetur magni at eos.</p>
                         </div>
                         <div class="col-lg-7">
-                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-6.png') }}" alt=""></div>
+                            <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-6.png') }}"
+                                alt="">
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div id="statistics-carousel" class="carousel slide carousel-fade carousel-dark d-lg-none" data-bs-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5 show active">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Estatísticas globais</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-1.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Diagramas completos</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-2.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Discriminação de custos</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-3.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Estatísticas por país</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-4.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Calendário de envios</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-5.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-edeef0 rounded-30 pt-4 pb-5">
+                            <div class="col-10 d-flex flex-column py-5 mx-auto">
+                                <div class="text-1415 ps-lg-2">
+                                    <h4 class="fs-20-24 fw-500 mb-4">Estado do envio</h4>
+                                    <p class="col-8 fw-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Saepe,
+                                        sed
+                                        optio
+                                        tenetur iusto, incidunt voluptate beatae itaque quo ex, voluptatum veniam porro.
+                                        Omnis,
+                                        nulla
+                                        libero porro tenetur magni at eos.</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <img class="img-fluid rounded-12"
+                                        src="{{ asset('assets/imgs/panels/panel-6.png') }}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#statistics-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#statistics-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </div>
 
