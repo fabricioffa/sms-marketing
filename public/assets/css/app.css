@@ -11767,10 +11767,6 @@ textarea.form-control-lg {
   font-weight: bold;
   font-style: normal;
 }
-aside {
-  border-bottom: 1px solid #525252;
-}
-
 .dropdown-toggle::after {
   content: url("/assets/imgs/vectors/down-caret.svg");
   border: none;
@@ -11801,7 +11797,7 @@ footer div.position-absolute {
 @media (min-width: 992px) {
   footer div.position-absolute p {
     font-family: "Archivo", sans-serif;
-    font-weight: normal;
+    font-weight: normal !important;
   }
 }
 
@@ -11813,6 +11809,14 @@ footer div.position-absolute {
   border-radius: 10px;
 }
 
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
 .rounded-30 {
   border-radius: 30px;
 }
@@ -11822,41 +11826,104 @@ footer div.position-absolute {
 }
 
 .font-archivo {
-  font-family: "Archivo", sans-serif;
+  font-family: "Archivo";
 }
 
 .font-roboto {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 .font-space-grotesk {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Space Grotesk";
+}
+
+.text-d3d2 {
+  color: #D3D2D2;
+}
+
+.text-ef {
+  color: #EFEFEF;
+}
+
+.text-5d {
+  color: #5D5D5D;
+}
+
+.text-1415 {
+  color: #141415;
+}
+
+.text-1d1e1f {
+  color: #1D1E1F;
 }
 
 .ls-1 {
   letter-spacing: -1px;
 }
 
+.fs-17 {
+  font-size: 1.063rem;
+}
+
 .fs-18 {
   font-size: 1.125rem;
 }
 
-.fs-17 {
-  font-size: 1.063rem;
+.fs-20 {
+  font-size: 1.25rem;
+}
+
+.fs-22 {
+  font-size: 1.375rem;
 }
 
 .fs-16-18 {
   font-size: clamp(1rem, 0.9697rem + 0.1294vw, 1.125rem);
 }
 
+.fs-18-20 {
+  font-size: clamp(1.125rem, 1.0947rem + 0.1294vw, 1.25rem);
+}
+
 .fs-18-22 {
   font-size: clamp(1.125rem, 1.0643rem + 0.2589vw, 1.375rem);
+}
+
+.fs-20-24 {
+  font-size: clamp(1.125rem, 1.034rem + 0.3883vw, 1.5rem);
 }
 
 .fs-28-32 {
   font-size: clamp(1.75rem, 1.6893rem + 0.2589vw, 2rem);
 }
 
+.fs-30-36 {
+  font-size: clamp(1.875rem, 1.784rem + 0.3883vw, 2.25rem);
+}
+
 .fs-36-64 {
   font-size: clamp(2.25rem, 1.8252rem + 1.8123vw, 4rem);
+}
+
+.border-color-52 {
+  border-color: #525252 !important;
+}
+
+.bg-1d1e1f {
+  background: #1D1E1F;
+}
+
+.bg-edeef0 {
+  background: #EDEEF0;
+}
+
+.card-img-height {
+  min-height: 177px;
+}
+
+.tab-decoration-bar {
+  border: 5px solid #BDBDBD;
+}
+[aria-selected=true] ~ .tab-decoration-bar {
+  border-color: #141415;
 }

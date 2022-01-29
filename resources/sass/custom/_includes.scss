@@ -1,7 +1,3 @@
-aside {
-    border-bottom: 1px solid #525252;
-}
-
 .dropdown-toggle::after {
     content: url("/assets/imgs/vectors/down-caret.svg");
 
@@ -16,8 +12,6 @@ aside {
 }
 
 footer {
-
-
     img {
         margin-left: -16px;
         @include media-breakpoint-up(lg) {
@@ -35,7 +29,7 @@ footer {
         p {
             @include media-breakpoint-up(lg) {
                 font-family: "Archivo", sans-serif;
-                font-weight: normal;
+                font-weight: normal !important;
             }
         }
     }
