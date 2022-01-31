@@ -11378,6 +11378,21 @@ footer div.position-absolute {
   }
 }
 
+@media (max-width: 991.98px) {
+  .mobile-show {
+    display: block !important;
+    opacity: 1 !important;
+  }
+}
+
+.top-10per {
+  top: 10%;
+}
+
+.card-min-h {
+  min-height: 351px;
+}
+
 .rounded-4 {
   border-radius: 4px;
 }
@@ -11427,12 +11442,20 @@ footer div.position-absolute {
   color: #EFEFEF;
 }
 
+.text-e7 {
+  color: #e7e7e7;
+}
+
 .text-5d {
   color: #5D5D5D;
 }
 
 .text-1d1e1f {
   color: #1D1E1F;
+}
+
+.text-2b2d42 {
+  color: #2B2D42;
 }
 
 .ls-1 {
@@ -11483,6 +11506,10 @@ footer div.position-absolute {
   font-size: clamp(1.875rem, 1.784rem + 0.3883vw, 2.25rem);
 }
 
+.fs-36-50 {
+  font-size: clamp(2.25rem, 1.5938rem + 2.9167vw, 3.125rem);
+}
+
 .fs-36-64 {
   font-size: clamp(2.25rem, 1.8252rem + 1.8123vw, 4rem);
 }
@@ -11496,15 +11523,15 @@ footer div.position-absolute {
 }
 
 .bg-1d1e1f {
-  background: #1D1E1F;
+  background-color: #1D1E1F;
 }
 
 .bg-edeef0 {
-  background: #EDEEF0;
+  background-color: #EDEEF0;
 }
 
 .bg-fa {
-  background: #fafafa;
+  background-color: #fafafa;
 }
 
 .mt-6 {

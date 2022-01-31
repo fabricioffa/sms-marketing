@@ -87,6 +87,7 @@ $secondary: #336ddb;
 
 @import "custom/includes";
 @import "custom/home";
+@import "custom/em-massa";
 
 .rounded-4 {
     border-radius: 4px;
@@ -141,12 +142,20 @@ $secondary: #336ddb;
     color: #EFEFEF;
 }
 
+.text-e7 {
+    color: #e7e7e7;
+}
+
 .text-5d {
     color: #5D5D5D;
 }
 
 .text-1d1e1f {
     color: #1D1E1F;
+}
+
+.text-2b2d42 {
+    color: #2B2D42;
 }
 
 .ls-1 {
@@ -197,6 +206,10 @@ $secondary: #336ddb;
     font-size: clamp(1.875rem, 1.7840rem + 0.3883vw, 2.25rem);
 }
 
+.fs-36-50 {
+    font-size: clamp(2.25rem, 1.5938rem + 2.9167vw, 3.125rem);
+}
+
 .fs-36-64 {
     font-size: clamp(2.25rem, 1.8252rem + 1.8123vw, 4rem);
 }
@@ -210,15 +223,15 @@ $secondary: #336ddb;
 }
 
 .bg-1d1e1f {
-    background: #1D1E1F;
+    background-color: #1D1E1F;
 }
 
 .bg-edeef0 {
-    background: #EDEEF0;
+    background-color: #EDEEF0;
 }
 
 .bg-fa {
-    background: #fafafa;
+    background-color: #fafafa;
 }
 
 .mt-6 {
