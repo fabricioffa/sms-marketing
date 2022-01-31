@@ -1,39 +1,8 @@
 // @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Roboto&family=Space+Grotesk:wght@300;400;500;700&display=swap");
 
-$spacer: 1rem;
-$spacers: (
-    0: 0,
-    1: $spacer * 0.25,
-    2: $spacer * 0.5,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 3,
-    6: $spacer * 6.25,
-);
-
 $primary: #141415;
 $secondary: #336ddb;
 
-// $utilities-text: map-merge(
-//   $utilities-colors,
-//   (
-//     "black": to-rgb($black),
-//     "white": to-rgb($white),
-//     "body": to-rgb($body-color)
-//   )
-// ) !default;
-// $utilities-text-colors: map-loop($utilities-text, rgba-css-var, "$key", "text") !default;
-
-// $theme-colors: (
-//   "primary":    $primary,
-//   "secondary":  $secondary,
-//   "success":    #198754,
-//   "info":       #0dcaf0,
-//   "warning":    #ffc107,
-//   "danger":     #dc3545,
-//   "light":      #f8f9fa,
-//   "dark":       #212529
-// );
 
 @import "~bootstrap5/scss/bootstrap";
 
@@ -117,6 +86,7 @@ $secondary: #336ddb;
 }
 
 @import "custom/includes";
+@import "custom/home";
 
 .rounded-4 {
     border-radius: 4px;
@@ -140,6 +110,12 @@ $secondary: #336ddb;
 
 .fw-500 {
     font-weight: 500;
+}
+
+@include media-breakpoint-up(lg) {
+    .fw-lg-500 {
+        font-weight: 500 !important;
+    }
 }
 
 .font-archivo {
@@ -169,16 +145,16 @@ $secondary: #336ddb;
     color: #5D5D5D;
 }
 
-.text-1415 {
-    color: #141415;
-}
-
 .text-1d1e1f {
     color: #1D1E1F;
 }
 
 .ls-1 {
     letter-spacing: -1px;
+}
+
+.fs-15 {
+    font-size: 0.938rem;
 }
 
 .fs-17 {
@@ -229,6 +205,10 @@ $secondary: #336ddb;
     border-color: #525252 !important;
 }
 
+.border-color-1d1e1f {
+    border-color: #1D1E1F !important;
+}
+
 .bg-1d1e1f {
     background: #1D1E1F;
 }
@@ -237,11 +217,46 @@ $secondary: #336ddb;
     background: #EDEEF0;
 }
 
+.bg-fa {
+    background: #fafafa;
+}
+
+.mt-6 {
+    margin-top: 6.25rem !important;
+}
+
+.pt-6 {
+    padding-top: 6.25rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 6.25rem !important;
+}
+
+@include media-breakpoint-up(lg) {
+    .pt-lg-6 {
+        padding-top: 6.25rem !important;
+    }
+    .pb-lg-6 {
+        padding-bottom: 6.25rem !important;
+    }
+}
+
+.box-shadow-14-19 {
+    box-shadow: 0px 14px 19px rgba(221, 221, 221, 0.1);
+}
+
+.panel-filter {
+    filter: drop-shadow(0px 9px 34px rgba(88, 88, 88, 0.15));
+}
+
+.mobile-size-icon {
+    width: 80px;
+}
+
 .card-img-height {
     min-height: 177px;
 }
-
-
 
 .tab-decoration-bar {
     border: 5px solid #BDBDBD;
@@ -249,4 +264,12 @@ $secondary: #336ddb;
     @at-root [aria-selected="true"] ~ & {
         border-color: #141415;
     }
+}
+
+.btn-padding {
+    padding: 13px 41px;
+}
+
+.w-max-content {
+    width: max-content;
 }
