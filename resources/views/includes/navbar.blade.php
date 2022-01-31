@@ -1,4 +1,4 @@
-<aside class="bg-primary fixed-top d-flex border border-color-52">
+<aside class="bg-primary fixed-top d-flex border-bottom border-color-52">
     <nav class="navbar navbar-expand-lg navbar-dark col-lg-10 col-xl-9 bg-primary ms-auto mx-lg-auto px-lg-5">
         <div class="container-fluid py-1">
             <a class="navbar-brand d-none d-lg-block" href="{{ route('homepage') }}"><img
