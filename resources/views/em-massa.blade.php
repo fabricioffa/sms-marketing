@@ -2,7 +2,7 @@
 
 @section('title', 'SMS em massa')
 
-@include('includes.navbar')
+@include('includes.dark-navbar')
 
 @section('banner')
     <div class="em-massa">
@@ -170,7 +170,7 @@
                 </header>
 
                 <div class="row gap-5 flex-column flex-xl-row mx-0">
-                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5 border">
+                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5">
                         <div class="card-body font-space-grotesk fw-500 p-0 mb-xl-0">
                             <h3 class="card-title text-white fs-20">Programação de eventos</h3>
                             <p class="col-md-8 col-lg-6 col-xl-10 col-xxl-8 card-text text-e7 fw-light text-e7 mb-3 mb-md-0 mx-md-auto mx-xl-0">Programe os envios das suas campanhas, para que as
@@ -185,7 +185,7 @@
                         </picture>
                     </div>
 
-                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5 border">
+                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5">
                         <div class="card-body font-space-grotesk fw-500 p-0">
                             <h3 class="card-title text-white fs-20">Caracteres especiais </h3>
                             <p class="col-md-10 col-lg-7 col-xl-11 col-xxl-9 card-text text-e7 fw-light text-e7 mx-md-auto mx-xl-0">Escolha a codificação desejada (UTF ou GSM): para
@@ -202,7 +202,7 @@
                 </div>
 
                 <div class="row gap-5 flex-column flex-xl-row pt-5 mt-xl-4 pt-xl-2 pb-lg-3 pb-xl-0 mx-0">
-                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5 border">
+                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5">
                         <div class="card-body font-space-grotesk fw-500 p-0">
                             <h3 class="card-title text-white fs-20">Personalização dos textos</h3>
                             <p class="card-text text-e7 fw-light text-e7">Personalização das mensagens. Personalize as suas
@@ -219,7 +219,7 @@
                         </picture>
                     </div>
 
-                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5 border">
+                    <div class="col card bg-1d1e1f card-min-h rounded-10 pt-4 px-4 pt-sm-5 px-sm-5">
                         <div class="card-body font-space-grotesk fw-500 p-0 mb-xl-0">
                             <h3 class="card-title text-white fs-20">Pré-visualisar </h3>
                             <p class="col-md-10 col-lg-8 col-xl-11 col-xxl-10 card-text text-e7 fw-light text-e7 mb-3 mb-md-0 mx-md-auto mx-xl-0">Pré-visualização da mesnagem: evite erros com a

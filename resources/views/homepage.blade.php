@@ -2,7 +2,7 @@
 
 @section('title', 'Home')
 
-@include('includes.navbar')
+@include('includes.dark-navbar')
 
 @section('banner')
     <div class="home">
