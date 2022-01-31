@@ -33,7 +33,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white font-archivo" href="{{ route('precos') }}">Preços</a>
                     </li>
-                    <a class="bg-secondary text-white  text-decoration-none rounded-4 py-3 px-5"
+                    <a class="bg-secondary btn-padding text-white  text-decoration-none rounded-4"
                         href="{{ route('registro') }}" role="button">Registro</a>
                 </ul>
             </div>
