@@ -46,7 +46,7 @@
                     <div class="col-11 col-md-7 col-lg-5 col-xxl bg-1d1e1f rounded-20 p-4">
                         <p class="text-5d fw-500 fs-20 pt-2 mb-0">01</p>
                         <div class="d-flex align-itens-center card-img-height">
-                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/card-1.svg') }}" alt=""
+                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/home/card-1.svg') }}" alt=""
                                 aria-hidden="true">
                         </div>
                         <div class="ps-2">
@@ -60,7 +60,7 @@
                     <div class="col-11 col-md-7 col-lg-5 col-xxl bg-1d1e1f rounded-20 p-4 mt-3 mt-lg-0">
                         <p class="text-5d fw-500 fs-20 pt-2 mb-0">02</p>
                         <div class="d-flex align-itens-center card-img-height">
-                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/card-2.svg') }}" alt=""
+                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/home/card-2.svg') }}" alt=""
                                 aria-hidden="true">
                         </div>
                         <div class="ps-2">
@@ -73,7 +73,7 @@
                     <div class="col-11 col-md-7 col-lg-5 col-xxl bg-1d1e1f rounded-20 p-4 mt-3 mt-lg-0">
                         <p class="text-5d fw-500 fs-20 pt-2 mb-0">03</p>
                         <div class="d-flex align-itens-center card-img-height">
-                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/card-3.svg') }}" alt=""
+                            <img class="ps-2 img-fluid" src="{{ asset('assets/imgs/cards/home/card-3.svg') }}" alt=""
                                 aria-hidden="true">
                         </div>
                         <div class="ps-2 pe-1">
@@ -168,7 +168,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-1.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-1.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-2.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-2.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -204,7 +204,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-3.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-3.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-4.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-4.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-5.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-5.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -258,7 +258,7 @@
                                     libero porro tenetur magni at eos.</p>
                             </div>
                             <div class="col-lg-7">
-                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/panel-6.png') }}"
+                                <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-6.png') }}"
                                     alt="">
                             </div>
                         </div>
@@ -288,7 +288,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-1.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-1.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-2.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-2.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -338,7 +338,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-3.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-3.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-4.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-4.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -390,7 +390,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-5.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-5.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -415,7 +415,7 @@
                                     </div>
                                     <div class="mt-5">
                                         <img class="img-fluid rounded-12"
-                                            src="{{ asset('assets/imgs/panels/panel-6.png') }}" alt="">
+                                            src="{{ asset('assets/imgs/panels/home/panel-6.png') }}" alt="">
                                     </div>
                                 </div>
                             </div>
