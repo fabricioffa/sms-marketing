@@ -1,8 +1,14 @@
 .dropdown-toggle::after {
-    content: url("/assets/imgs/vectors/down-caret.svg");
-
     border: none;
     vertical-align: 0.095em;
+
+    @at-root .bg-primary & {
+        content: url("/assets/imgs/vectors/light-down-caret.svg");
+    }
+
+    @at-root .bg-white & {
+        content: url("/assets/imgs/vectors/dark-down-caret.svg");
+    }
 }
 
 .dropdown-toggle::before {

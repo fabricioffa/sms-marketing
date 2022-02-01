@@ -1,5 +1,5 @@
 <aside class="bg-white fixed-top d-flex border-bottom border-color-navbar-light">
-    <nav class="navbar navbar-expand-lg navbar-dark col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-lg-5">
         <div class="container-fluid py-1">
             <a class="navbar-brand d-none d-lg-block" href="{{ route('homepage') }}"><img
                     src="{{ asset('assets/imgs/logos/navbar.svg') }}" alt=""></a>
