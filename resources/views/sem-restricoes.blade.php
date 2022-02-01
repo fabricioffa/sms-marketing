@@ -10,7 +10,8 @@
             <div class="d-flex flex-column flex-lg-row">
                 <header class="font-space-grotesk text-center text-lg-start text-0e">
                     <h1 class="fs-36-50 fw-bold ls-1 mb-3">Envie SMS sem restrições</h1>
-                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de conteúdo.
+                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de
+                        conteúdo.
                         Mytelecom.pt. do grupo Webhouse, assugura-lhe todos os canais de comunicação em massa.</p>
                 </header>
 
@@ -29,7 +30,9 @@
             </div>
         </div>
     </section>
+@endsection
 
+@section('content')
     <section class="bg-fa font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
         <div class="container pt-5 pt-lg-0 pb-4 pb-lg-0 gx-3">
 
@@ -39,7 +42,8 @@
                     <h2
                         class="col-lg-6 col-xl-5 col-xxl-4 fs-30 fw-bold text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
                         Países em destaque com Rotas ao melhor preço</h2>
-                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem Restrições</p>
+                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem Restrições
+                    </p>
                 </div>
 
                 <div class="d-flex flex-wrap gap-2 gap-lg-custom-1 text-center pb-3 pb-lg-2 mb-1">
@@ -186,7 +190,8 @@
                             rede de SMS
                             Internacionais.</p>
                     </header>
-                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem Restrições</p>
+                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem
+                        Restrições</p>
                 </div>
 
                 <div

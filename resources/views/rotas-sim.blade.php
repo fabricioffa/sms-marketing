@@ -13,7 +13,8 @@
                         ROTAS
                         SIM
                         nunca foi tão descomplicado!</h1>
-                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total liberdade e segurança. Insira os números
+                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total
+                        liberdade e segurança. Insira os números
                         diretamente ou insira números de teste para os quais a campanha será direcionada.</p>
                 </header>
 
@@ -32,7 +33,9 @@
             </div>
         </div>
     </section>
+@endsection
 
+@section('content')
     <section class="bg-fa font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
         <div class="container pt-5 pt-lg-0 pb-4 pb-lg-0 gx-3">
 

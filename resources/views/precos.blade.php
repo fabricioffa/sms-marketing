@@ -35,6 +35,9 @@
             </div>
         </div>
     </section>
+@endsection
+
+@section('content')
 
     <section class="bg-fa font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
         <div class="container pt-5 pt-lg-0 pb-4 pb-lg-0 gx-3">
@@ -185,21 +188,22 @@
             <div class="bg-edeef0 rounded-12 rounded-lg-30 p-4 p-md-5">
                 <div
                     class="d-flex flex-column flex-lg-row align-items-start align-items-sm-center justify-content-lg-between pt-2 pt-lg-3 pb-5">
-                    <header class="col-lg-8 col-xl-6 col-xxl-5 text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
-                        <h2
-                            class="fs-30 fw-bold mb-3">
+                    <header
+                        class="col-lg-8 col-xl-6 col-xxl-5 text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
+                        <h2 class="fs-30 fw-bold mb-3">
                             Internacionalmente, atuamos em outros países também, tais como:</h2>
-                        <p class="fs-18 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a nossa rede de SMS
+                        <p class="fs-18 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a nossa
+                            rede de SMS
                             Internacionais.</p>
                     </header>
                     <p class="align-self-lg-start bg-9dceff rounded-02 fw-500 text-005dbb px-3 py-2 mb-0">SMS em massa para
                         Empresas</p>
                 </div>
 
-                <div class="row-cols-1 row-cols-lg-3 row-cols-xxl-4 d-flex flex-wrap gap-2 gap-lg-custom-2 pb-3 pb-lg-2 mb-1">
+                <div
+                    class="row-cols-1 row-cols-lg-3 row-cols-xxl-4 d-flex flex-wrap gap-2 gap-lg-custom-2 pb-3 pb-lg-2 mb-1">
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/andorra.svg') }}"
-                            alt="Bandeira de Andorra">
+                        <img src="{{ asset('assets/imgs/icons/flags/andorra.svg') }}" alt="Bandeira de Andorra">
                         <h6 class="fw-500 text-1d1e1f ms-3">Andorra</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
@@ -210,8 +214,7 @@
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/afghanistan.svg') }}"
-                            alt="Bandeira do Afeganistão">
+                        <img src="{{ asset('assets/imgs/icons/flags/afghanistan.svg') }}" alt="Bandeira do Afeganistão">
                         <h6 class="fw-500 text-1d1e1f ms-3">Afeganistão</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
@@ -222,57 +225,48 @@
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/albania.svg') }}"
-                            alt="Bandeira da Albânia">
+                        <img src="{{ asset('assets/imgs/icons/flags/albania.svg') }}" alt="Bandeira da Albânia">
                         <h6 class="fw-500 text-1d1e1f ms-3">Albânia</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
 
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/armenia.svg') }}"
-                            alt="Bandeira da Armênia">
+                        <img src="{{ asset('assets/imgs/icons/flags/armenia.svg') }}" alt="Bandeira da Armênia">
                         <h6 class="fw-500 text-1d1e1f ms-3">Armênia</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/angola.svg') }}"
-                            alt="Bandeira da Angola">
+                        <img src="{{ asset('assets/imgs/icons/flags/angola.svg') }}" alt="Bandeira da Angola">
                         <h6 class="fw-500 text-1d1e1f ms-3">Angola</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/argentina.svg') }}"
-                            alt="Bandeira do Argentina">
+                        <img src="{{ asset('assets/imgs/icons/flags/argentina.svg') }}" alt="Bandeira do Argentina">
                         <h6 class="fw-500 text-1d1e1f ms-3">Argentina</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/austria.svg') }}"
-                            alt="Bandeira da Áustria">
+                        <img src="{{ asset('assets/imgs/icons/flags/austria.svg') }}" alt="Bandeira da Áustria">
                         <h6 class="fw-500 text-1d1e1f ms-3">Áustria</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/australia.svg') }}"
-                            alt="Bandeira da Austrália">
+                        <img src="{{ asset('assets/imgs/icons/flags/australia.svg') }}" alt="Bandeira da Austrália">
                         <h6 class="fw-500 text-1d1e1f ms-3">Austrália</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/aruba.svg') }}"
-                            alt="Bandeira de Aruba">
+                        <img src="{{ asset('assets/imgs/icons/flags/aruba.svg') }}" alt="Bandeira de Aruba">
                         <h6 class="fw-500 text-1d1e1f ms-3">Aruba</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/azerbaijan.svg') }}"
-                            alt="Bandeira do Azerbeijão">
+                        <img src="{{ asset('assets/imgs/icons/flags/azerbaijan.svg') }}" alt="Bandeira do Azerbeijão">
                         <h6 class="fw-500 text-1d1e1f ms-3">Azerbeijão</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/andorra.svg') }}"
-                            alt="Bandeira de Andorra">
+                        <img src="{{ asset('assets/imgs/icons/flags/andorra.svg') }}" alt="Bandeira de Andorra">
                         <h6 class="fw-500 text-1d1e1f ms-3">Andorra</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
@@ -283,8 +277,7 @@
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/afghanistan.svg') }}"
-                            alt="Bandeira do Afeganistão">
+                        <img src="{{ asset('assets/imgs/icons/flags/afghanistan.svg') }}" alt="Bandeira do Afeganistão">
                         <h6 class="fw-500 text-1d1e1f ms-3">Afeganistão</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
@@ -295,51 +288,43 @@
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/albania.svg') }}"
-                            alt="Bandeira da Albânia">
+                        <img src="{{ asset('assets/imgs/icons/flags/albania.svg') }}" alt="Bandeira da Albânia">
                         <h6 class="fw-500 text-1d1e1f ms-3">Albânia</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
 
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/armenia.svg') }}"
-                            alt="Bandeira da Armênia">
+                        <img src="{{ asset('assets/imgs/icons/flags/armenia.svg') }}" alt="Bandeira da Armênia">
                         <h6 class="fw-500 text-1d1e1f ms-3">Armênia</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/angola.svg') }}"
-                            alt="Bandeira da Angola">
+                        <img src="{{ asset('assets/imgs/icons/flags/angola.svg') }}" alt="Bandeira da Angola">
                         <h6 class="fw-500 text-1d1e1f ms-3">Angola</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/argentina.svg') }}"
-                            alt="Bandeira do Argentina">
+                        <img src="{{ asset('assets/imgs/icons/flags/argentina.svg') }}" alt="Bandeira do Argentina">
                         <h6 class="fw-500 text-1d1e1f ms-3">Argentina</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/austria.svg') }}"
-                            alt="Bandeira da Áustria">
+                        <img src="{{ asset('assets/imgs/icons/flags/austria.svg') }}" alt="Bandeira da Áustria">
                         <h6 class="fw-500 text-1d1e1f ms-3">Áustria</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/australia.svg') }}"
-                            alt="Bandeira da Austrália">
+                        <img src="{{ asset('assets/imgs/icons/flags/australia.svg') }}" alt="Bandeira da Austrália">
                         <h6 class="fw-500 text-1d1e1f ms-3">Austrália</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/aruba.svg') }}"
-                            alt="Bandeira de Aruba">
+                        <img src="{{ asset('assets/imgs/icons/flags/aruba.svg') }}" alt="Bandeira de Aruba">
                         <h6 class="fw-500 text-1d1e1f ms-3">Aruba</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
                     <div class="flex-grow-1 d-flex align-items-center bg-white rounded-5 py-4 ps-4 pe-3">
-                        <img src="{{ asset('assets/imgs/icons/flags/azerbaijan.svg') }}"
-                            alt="Bandeira do Azerbeijão">
+                        <img src="{{ asset('assets/imgs/icons/flags/azerbaijan.svg') }}" alt="Bandeira do Azerbeijão">
                         <h6 class="fw-500 text-1d1e1f ms-3">Azerbeijão</h6>
                         <p class="fw-bold fs-18-24 text-secondary ms-auto mb-0">0.01010€</p>
                     </div>
