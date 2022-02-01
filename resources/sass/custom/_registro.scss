@@ -1,0 +1,51 @@
+.login {
+    nav {
+        top: 5%;
+        right: 5%;
+    }
+
+    .progress {
+        height: 2px;
+    }
+
+    fieldset {
+        display: none;
+
+        &[aria-current="step"] {
+            display: block;
+        }
+    }
+}
+
+.google-logo::before {
+    content: url("/assets/imgs/logos/google.svg");
+    margin-right: 4px;
+    vertical-align: -0.3em;
+}
+
+.between-lines {
+    &::after, &::before {
+        content: '';
+
+        position: absolute;
+        top: 46%;
+
+        display: block;
+        width: 161px;
+
+        border: 1px solid #EFEFEF;
+    }
+
+    &::after {
+        right: calc(50% + 20px);
+    }
+
+    &::before {
+        left: calc(50% + 20px);
+    }
+}
+
+
+
+
+
