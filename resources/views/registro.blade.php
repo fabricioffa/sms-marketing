@@ -44,7 +44,7 @@
                     <fieldset>
                         <section class="d-flex flex-column mt-3">
                             <label for="login-name">Nome</label>
-                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3" type="text" type="text" name="login-name"
+                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3" type="text" name="login-name"
                                 id="login-name" autocomplete="name" minlength="2" maxlength="100" autofocus>
                         </section>
                         <section class="d-flex flex-column mt-3">
@@ -81,9 +81,16 @@
 
                     <fieldset aria-current="step">
                         <section class="d-flex flex-column mt-3">
-                            <label for="login-name">Nome</label>
-                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3" type="text" type="text" name="login-name"
-                                id="login-name" autocomplete="name" minlength="2" maxlength="100" autofocus>
+                            <label for="login-country">Nome</label>
+                            <select class="bg-efefef border-0 rounded-03 py-2 ps-3" name="login-country"
+                                id="login-country" required>
+                                <option value="" disabled selected>
+                                    Selecione o tipo de contratação
+                                </option>
+                                <option value="Opção 1">Opção 1</option>
+                                <option value="Opção 2">Opção 2</option>
+                                <option value="Opção 3">Opção 3</option>
+                            </select>
                         </section>
                         <section class="d-flex flex-column mt-3">
                             <label for="login-username">Usuário<sup class="text-danger">*</sup></label>
