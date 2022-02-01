@@ -11406,8 +11406,47 @@ footer div.position-absolute {
   left: -40px;
 }
 
+.login nav {
+  top: 5%;
+  right: 5%;
+}
+.login .progress {
+  height: 2px;
+}
+.login fieldset {
+  display: none;
+}
+.login fieldset[aria-current=step] {
+  display: block;
+}
+
+.google-logo::before {
+  content: url("/assets/imgs/logos/google.svg");
+  margin-right: 4px;
+  vertical-align: -0.3em;
+}
+
+.between-lines::after, .between-lines::before {
+  content: "";
+  position: absolute;
+  top: 46%;
+  display: block;
+  width: 161px;
+  border: 1px solid #EFEFEF;
+}
+.between-lines::after {
+  right: calc(50% + 20px);
+}
+.between-lines::before {
+  left: calc(50% + 20px);
+}
+
 .rounded-02 {
   border-radius: 2px;
+}
+
+.rounded-03 {
+  border-radius: 3px;
 }
 
 .rounded-4 {
@@ -11510,6 +11549,10 @@ footer div.position-absolute {
   letter-spacing: -1px;
 }
 
+.fs-14 {
+  font-size: 0.875rem;
+}
+
 .fs-15 {
   font-size: 0.938rem;
 }
@@ -11578,6 +11621,10 @@ footer div.position-absolute {
   font-size: clamp(1.875rem, 1.784rem + 0.3883vw, 2.25rem);
 }
 
+.fs-36-40 {
+  font-size: clamp(2.25rem, 2.1893rem + 0.2589vw, 2.5rem);
+}
+
 .fs-36-50 {
   font-size: clamp(2.25rem, 1.5938rem + 2.9167vw, 3.125rem);
 }
@@ -11602,8 +11649,16 @@ footer div.position-absolute {
   border-color: #b6b6b6 !important;
 }
 
+.border-color-ef {
+  border-color: #efefef !important;
+}
+
 .bg-9dceff {
   background-color: #9dceff;
+}
+
+.bg-1415 {
+  background-color: #141415;
 }
 
 .bg-a0fff4 {
@@ -11616,6 +11671,14 @@ footer div.position-absolute {
 
 .bg-1d1e1f {
   background-color: #1d1e1f;
+}
+
+.bg-2b2d42 {
+  background-color: #2B2D42;
+}
+
+.bg-efefef {
+  background-color: #EFEFEF;
 }
 
 .bg-edeef0 {

@@ -88,9 +88,14 @@ $secondary: #336ddb;
 @import "custom/home";
 @import "custom/em-massa";
 @import "custom/para-empresa";
+@import "custom/registro";
 
 .rounded-02 {
     border-radius: 2px;
+}
+
+.rounded-03 {
+    border-radius: 3px;
 }
 
 .rounded-4 {
@@ -196,6 +201,10 @@ $secondary: #336ddb;
     letter-spacing: -1px;
 }
 
+.fs-14 {
+    font-size: 0.875rem;
+}
+
 .fs-15 {
     font-size: 0.938rem;
 }
@@ -264,6 +273,10 @@ $secondary: #336ddb;
     font-size: clamp(1.875rem, 1.7840rem + 0.3883vw, 2.25rem);
 }
 
+.fs-36-40 {
+    font-size: clamp(2.25rem, 2.1893rem + 0.2589vw, 2.5rem);
+}
+
 .fs-36-50 {
     font-size: clamp(2.25rem, 1.5938rem + 2.9167vw, 3.125rem);
 }
@@ -288,8 +301,16 @@ $secondary: #336ddb;
     border-color: #b6b6b6 !important;
 }
 
+.border-color-ef {
+    border-color: #efefef !important;
+}
+
 .bg-9dceff {
     background-color: #9dceff;
+}
+
+.bg-1415 {
+    background-color: #141415;
 }
 
 .bg-a0fff4 {
@@ -302,6 +323,14 @@ $secondary: #336ddb;
 
 .bg-1d1e1f {
     background-color: #1d1e1f;
+}
+
+.bg-2b2d42 {
+    background-color: #2B2D42;
+}
+
+.bg-efefef {
+    background-color: #EFEFEF;
 }
 
 .bg-edeef0 {
