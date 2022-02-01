@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'SMS por rotas SIM')
+@section('title', 'SMS sem restrições')
 
 @include('includes.light-navbar')
 
@@ -9,16 +9,13 @@
         <div class="container pt-4 pt-lg-5 mt-lg-5">
             <div class="d-flex flex-column flex-lg-row">
                 <header class="font-space-grotesk text-center text-lg-start text-0e">
-                    <h1 class="fs-36-50 fw-bold ls-1 mb-3">O envio de SMS por
-                        ROTAS
-                        SIM
-                        nunca foi tão descomplicado!</h1>
-                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total liberdade e segurança. Insira os números
-                        diretamente ou insira números de teste para os quais a campanha será direcionada.</p>
+                    <h1 class="fs-36-50 fw-bold ls-1 mb-3">Envie SMS sem restrições</h1>
+                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de conteúdo.
+                        Mytelecom.pt. do grupo Webhouse, assugura-lhe todos os canais de comunicação em massa.</p>
                 </header>
 
                 <img class="d-block col-12 col-sm-10 col-lg-5 mt-5 mt-lg-0 mx-auto"
-                    src="{{ asset('assets/imgs/banners/rotas-sim.svg') }}" alt="">
+                    src="{{ asset('assets/imgs/banners/para-empresa.svg') }}" alt="">
                 {{-- <div class="col-5 text-ballon bg-white rounded-10 font-archivo position-relative pt-3 pb-4">
                         <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
                             <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
@@ -42,7 +39,7 @@
                     <h2
                         class="col-lg-6 col-xl-5 col-xxl-4 fs-30 fw-bold text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
                         Países em destaque com Rotas ao melhor preço</h2>
-                    <p class="align-self-lg-start bg-a0fff4 rounded-02 fw-500 text-00685c px-3 py-2 mb-0">SMS Rotas SIM</p>
+                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem Restrições</p>
                 </div>
 
                 <div class="d-flex flex-wrap gap-2 gap-lg-custom-1 text-center pb-3 pb-lg-2 mb-1">
@@ -189,7 +186,7 @@
                             rede de SMS
                             Internacionais.</p>
                     </header>
-                    <p class="align-self-lg-start bg-a0fff4 rounded-02 fw-500 text-00685c px-3 py-2 mb-0">SMS Rotas SIM</p>
+                    <p class="align-self-lg-start bg-ffee9c rounded-02 fw-500 text-ac8e00 px-3 py-2 mb-0">SMS Sem Restrições</p>
                 </div>
 
                 <div
