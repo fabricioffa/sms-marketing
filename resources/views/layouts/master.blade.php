@@ -14,11 +14,12 @@
 </head>
 
 <body>
-        @yield('banner')
-        <main>
-            @yield('content')
-        </main>
-        @include('includes.footer')
+    @yield('banner')
+    <main>
+        @yield('content')
+    </main>
+
+    @include('includes.footer')
 
     <script src="{{ mix('assets/js/app.js') }}"></script>
     @stack('javascript')
