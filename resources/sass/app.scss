@@ -3,7 +3,6 @@
 $primary: #141415;
 $secondary: #336ddb;
 
-
 @import "~bootstrap5/scss/bootstrap";
 
 // @supports (font-variation-settings: "wdth" 115) {
@@ -88,9 +87,18 @@ $secondary: #336ddb;
 @import "custom/includes";
 @import "custom/home";
 @import "custom/em-massa";
+@import "custom/para-empresa";
+
+.rounded-02 {
+    border-radius: 2px;
+}
 
 .rounded-4 {
     border-radius: 4px;
+}
+
+.rounded-5 {
+    border-radius: 5px;
 }
 
 .rounded-10 {
@@ -109,12 +117,18 @@ $secondary: #336ddb;
     border-radius: 30px;
 }
 
+.rounded-lg-30 {
+    @include media-breakpoint-up(lg) {
+        border-radius: 30px;
+    }
+}
+
 .fw-500 {
     font-weight: 500;
 }
 
-@include media-breakpoint-up(lg) {
-    .fw-lg-500 {
+.fw-lg-500 {
+    @include media-breakpoint-up(lg) {
         font-weight: 500 !important;
     }
 }
@@ -134,12 +148,16 @@ $secondary: #336ddb;
     // font-family: "Space Grotesk", sans-serif;
 }
 
+.text-005dbb {
+    color: #005dbb;
+}
+
 .text-d3d2 {
-    color: #D3D2D2;
+    color: #d3d2d2;
 }
 
 .text-ef {
-    color: #EFEFEF;
+    color: #efefef;
 }
 
 .text-e7 {
@@ -151,19 +169,19 @@ $secondary: #336ddb;
 }
 
 .text-5d {
-    color: #5D5D5D;
+    color: #5d5d5d;
 }
 
 .text-1d1e1f {
-    color: #1D1E1F;
+    color: #1d1e1f;
 }
 
 .text-2b2d42 {
-    color: #2B2D42;
+    color: #2b2d42;
 }
 
 .text-light-navbar {
-    color: #0E0E0E !important;
+    color: #0e0e0e !important;
 }
 
 .ls-1 {
@@ -182,12 +200,24 @@ $secondary: #336ddb;
     font-size: 1.125rem;
 }
 
+.fs-19 {
+    font-size: 1.188rem;
+}
+
 .fs-20 {
     font-size: 1.25rem;
 }
 
 .fs-22 {
     font-size: 1.375rem;
+}
+
+.fs-24 {
+    font-size: 1.5rem;
+}
+
+.fs-30 {
+    font-size: 1.875rem;
 }
 
 .fs-16-18 {
@@ -202,12 +232,16 @@ $secondary: #336ddb;
     font-size: clamp(1.125rem, 1.0643rem + 0.2589vw, 1.375rem);
 }
 
-.fs-20-24 {
+.fs-18-24 {
     font-size: clamp(1.125rem, 1.0340rem + 0.3883vw, 1.5rem);
 }
 
+.fs-20-24 {
+    font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
+}
+
 .fs-20-32 {
-    font-size: clamp(1.25rem, 0.6875rem + 2.5000vw, 2rem);
+    font-size: clamp(1.25rem, 1.0680rem + 0.7767vw, 2rem);
 }
 
 .fs-28-32 {
@@ -235,19 +269,23 @@ $secondary: #336ddb;
 }
 
 .border-color-1d1e1f {
-    border-color: #1D1E1F !important;
+    border-color: #1d1e1f !important;
 }
 
 .border-color-b6 {
     border-color: #b6b6b6 !important;
 }
 
+.bg-9dceff {
+    background-color: #9dceff;
+}
+
 .bg-1d1e1f {
-    background-color: #1D1E1F;
+    background-color: #1d1e1f;
 }
 
 .bg-edeef0 {
-    background-color: #EDEEF0;
+    background-color: #edeef0;
 }
 
 .bg-fa {
@@ -275,6 +313,18 @@ $secondary: #336ddb;
     }
 }
 
+.gap-lg-custom-1 {
+    @include media-breakpoint-up(sm) {
+        gap: 32px 28px !important;
+    }
+}
+
+.gap-lg-custom-2 {
+    @include media-breakpoint-up(sm) {
+        gap: 32px 67px !important;
+    }
+}
+
 .box-shadow-14-19 {
     box-shadow: 0px 14px 19px rgba(221, 221, 221, 0.1);
 }
@@ -292,7 +342,7 @@ $secondary: #336ddb;
 }
 
 .tab-decoration-bar {
-    border: 5px solid #BDBDBD;
+    border: 5px solid #bdbdbd;
 
     @at-root [aria-selected="true"] ~ & {
         border-color: #141415;
