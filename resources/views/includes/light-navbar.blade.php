@@ -1,18 +1,3 @@
-<?php
-
-$isChecked = [ 'unChecked', 'unChecked', 'unChecked' ];
-
-switch (request::path()) {
-    case 'apis': $isChecked[1] = 'checked';
-    break;
-    case 'precos': $isChecked[2] = 'checked';
-    break;
-    default: $isChecked[0] = 'checked';
-    break;
-}
-
-?>
-
 <aside class="bg-white fixed-top d-flex border-bottom border-color-navbar-light">
     <nav class="navbar navbar-expand-lg navbar-light col-12 col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-3 px-lg-5">
         <div class="container-fluid py-1">
@@ -26,7 +11,8 @@ switch (request::path()) {
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav gap-4 fw-500 align-items-baseline font-space-grotesk">
                     <li class="nav-item dropdown">
-                        <a class="nav-link position-relative dropdown-toggle text-light-navbar <?php echo $isChecked[0]?>" id="navbarDropdown" role="button"
+                        <a class="nav-link position-relative dropdown-toggle text-light-navbar
+                        {{ in_array( request()->path(), ['em-massa', 'para-empresa', 'rotas-sim', 'sem-restricoes']) ? 'checked' : null }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             SMS Marketing
                         </a>
@@ -42,11 +28,11 @@ switch (request::path()) {
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative text-light-navbar <?php echo $isChecked[1]?>" href="{{ route('apis') }}" tabindex="-1"
+                        <a class="nav-link position-relative text-light-navbar {{ request()->path() == 'apis' ? 'checked' : null }}" href="{{ route('apis') }}" tabindex="-1"
                             aria-disabled="true">Apis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative text-light-navbar <?php echo $isChecked[2]?> font-archivo" href="{{ route('precos') }}">Preços</a>
+                        <a class="nav-link position-relative text-light-navbar font-archivo {{ request()->path() == 'precos' ? 'checked' : null }}" href="{{ route('precos') }}">Preços</a>
                     </li>
                     <a class="bg-secondary btn-padding text-white  text-decoration-none rounded-4"
                         href="{{ route('registro') }}" role="button">Registro</a>
