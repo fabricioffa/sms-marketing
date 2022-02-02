@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-lg-5">
         <div class="container-fluid py-1">
             <a class="navbar-brand d-none d-lg-block" href="{{ route('homepage') }}"><img
-                    src="{{ asset('assets/imgs/logos/navbar.svg') }}" alt=""></a>
+                    src="{{ asset('assets/imgs/logos/light-navbar.svg') }}" alt=""></a>
             <button class="navbar-toggler d-block d-lg-none ms-auto ms-lg-0 " type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
