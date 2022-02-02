@@ -11,10 +11,11 @@
     }
 }
 
-.dropdown-toggle::before {
+.checked::before {
     content: url("/assets/imgs/vectors/elipse-secondary.svg");
-
-    vertical-align: 0.095em;
+    position: absolute;
+    left: -3px;
+    top: 41%;
 }
 
 .bg-primary .dropdown-item:hover {

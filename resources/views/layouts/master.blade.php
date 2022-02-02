@@ -19,7 +19,10 @@
         @yield('content')
     </main>
 
-    @include('includes.footer')
+    @if (Request::path() != 'registro')
+        @include('includes.footer')
+    @endif
+
 
     <script src="{{ mix('assets/js/app.js') }}"></script>
     @stack('javascript')
