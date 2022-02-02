@@ -11410,12 +11410,24 @@ footer div.position-absolute {
   left: -40px;
 }
 
+.login img[alt="MTC logo"] {
+  top: 1.5%;
+  left: 5%;
+}
 .login nav {
-  top: 5%;
+  top: 1.5%;
   right: 5%;
 }
+@media (min-width: 992px) {
+  .login nav {
+    top: 5%;
+  }
+}
 .login .progress {
-  height: 2px;
+  height: 1px;
+}
+.login .progress-bar {
+  height: 3px;
 }
 .login fieldset {
   display: none;
@@ -11571,6 +11583,10 @@ footer div.position-absolute {
 
 .text-5d {
   color: #5d5d5d;
+}
+
+.text-96 {
+  color: #969696;
 }
 
 .text-1d1e1f {
