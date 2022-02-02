@@ -1,7 +1,7 @@
 
 const progressBar = document.querySelector(".progress-bar");
 const labelsContainer = progressBar && document.querySelector(".labels-container");
-const fieldsetsNodeList = progressBar && document.querySelectorAll(".login fieldset");
+const fieldsetsNodeList = progressBar && document.querySelectorAll(".register fieldset");
 const nextBtnsNodeList = progressBar && document.querySelectorAll("[type=button]");
 
 const progressBarLabels =

@@ -5305,7 +5305,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 var progressBar = document.querySelector(".progress-bar");
 var labelsContainer = progressBar && document.querySelector(".labels-container");
-var fieldsetsNodeList = progressBar && document.querySelectorAll(".login fieldset");
+var fieldsetsNodeList = progressBar && document.querySelectorAll(".register fieldset");
 var nextBtnsNodeList = progressBar && document.querySelectorAll("[type=button]");
 var progressBarLabels = labelsContainer && Array.from(labelsContainer.children);
 var fieldsets = fieldsetsNodeList && Array.from(fieldsetsNodeList);
