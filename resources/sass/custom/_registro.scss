@@ -45,6 +45,38 @@
     }
 }
 
+.form-switch .form-check-input.custom-login-switch {
+    width: 72px;
+    height: 32px;
+    background-color: #EFEFEF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.form-switch .form-check-input.custom-login-switch:checked {
+    background-color: #EFEFEF;
+}
+
+.custom-checkbox {
+    background: #EFEFEF;
+    width: 22px;
+    height: 22px;
+    appearance: none;
+
+    &:checked {
+        appearance: auto;
+    }
+}
+
+.custom-select-caret {
+    appearance: none;
+
+    background: url("/assets/imgs/vectors/login-select-caret.svg") 98% center no-repeat;
+}
+
+.max-form-width {
+    max-width: min(100%, 370px);
+}
+
 
 
 
