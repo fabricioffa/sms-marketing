@@ -2,8 +2,6 @@
 
 @section('title', 'Criar conta')
 
-@endsection
-
 @section('content')
 
     <div class="register d-flex font-space-grotesk text-2b2d42 min-vh-100">
