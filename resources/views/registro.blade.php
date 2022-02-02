@@ -16,7 +16,7 @@
             <nav class="fs-16 position-absolute" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active text-end "><a class="fs-15"
-                            href="{{ url()->previous() }}">Voltar para a pagina inicial</a>
+                            href="{{ route('homepage') }}">Voltar para a pagina inicial</a>
                     </li>
                 </ol>
             </nav>
