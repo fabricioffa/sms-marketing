@@ -1,4 +1,8 @@
-@extends('layouts.registro')
+@extends('layouts.master')
+
+@section('title', 'Criar conta')
+
+@endsection
 
 @section('content')
 
@@ -10,7 +14,7 @@
                 aria-hidden="true">
         </aside>
 
-        <main class="d-flex justify-content-center align-items-center bg-fa flex-grow-1 position-relative">
+        <section class="d-flex justify-content-center align-items-center bg-fa flex-grow-1 position-relative">
             <img class="position-absolute d-lg-none" src="{{ asset('assets/imgs/logos/light-navbar.svg') }}" alt="MTC logo">
 
             <nav class="fs-16 position-absolute" aria-label="breadcrumb">
@@ -135,7 +139,7 @@
                 </form>
             </div>
 
-        </main>
+        </section>
 
     </div>
 
