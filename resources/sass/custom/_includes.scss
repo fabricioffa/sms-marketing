@@ -17,6 +17,11 @@
     vertical-align: 0.095em;
 }
 
+.bg-primary .dropdown-item:hover {
+    // background-color: $white;
+    color: $primary !important;
+}
+
 footer {
     img {
         margin-left: -16px;

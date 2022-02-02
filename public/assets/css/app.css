@@ -11340,6 +11340,10 @@ textarea.form-control-lg {
   vertical-align: 0.095em;
 }
 
+.bg-primary .dropdown-item:hover {
+  color: #141415 !important;
+}
+
 footer img {
   margin-left: -16px;
 }
