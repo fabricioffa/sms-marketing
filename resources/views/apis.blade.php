@@ -27,8 +27,6 @@
 @endsection
 
 @section('content')
-
-@endsection
 <section class="bg-fa font-space-grotesk pt-1 pt-lg-6 pb-6">
     <div class="container pt-5 mt-2 pt-lg-3 mt-lg-0 mb-5 mb-sm-4 mb-lg-5 pb-5 pb-sm-0 pb-lg-6 gx-3">
 
