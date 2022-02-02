@@ -1,5 +1,5 @@
 <aside class="bg-white fixed-top d-flex border-bottom border-color-navbar-light">
-    <nav class="navbar navbar-expand-lg navbar-light col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-lg-5">
+    <nav class="navbar navbar-expand-lg navbar-light col-12 col-lg-10 col-xl-9 bg-white ms-auto mx-lg-auto px-3 px-lg-5">
         <div class="container-fluid py-1">
             <a class="navbar-brand d-none d-lg-block" href="{{ route('homepage') }}"><img
                     src="{{ asset('assets/imgs/logos/light-navbar.svg') }}" alt=""></a>
@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav gap-4 fw-500 align-items-baseline font-space-grotesk">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-light-navbar" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle text-light-navbar" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             SMS Marketing
                         </a>
