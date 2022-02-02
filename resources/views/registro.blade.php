@@ -6,11 +6,11 @@
 
 @section('content')
 
-    <div class="login d-flex font-space-grotesk text-2b2d42 min-vh-100">
+    <div class="register d-flex font-space-grotesk text-2b2d42 min-vh-100">
         <aside class="col-3 d-none d-lg-block bg-primary">
             <a href="{{ route('homepage') }}"><img class="ps-5 ms-4 pt-5 mt-2"
-                    src="{{ asset('assets/imgs/logos/login.svg') }}" alt="MTC logo - Home"></a>
-            <img class="d-block mx-auto w-100 mt-5 pt-3" src="{{ asset('assets/imgs/decorative/login.svg') }}" alt=""
+                    src="{{ asset('assets/imgs/logos/register.svg') }}" alt="MTC logo - Home"></a>
+            <img class="d-block mx-auto w-100 mt-5 pt-3" src="{{ asset('assets/imgs/decorative/register.svg') }}" alt=""
                 aria-hidden="true">
         </aside>
 
@@ -45,32 +45,32 @@
 
                     <fieldset aria-current="step" aria-labelledby="step-1-label">
                         <section class="d-flex flex-column mt-3">
-                            <label for="login-name">Nome</label>
-                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="login-name"
-                                id="login-name" autocomplete="name" minlength="2" maxlength="100" autofocus>
+                            <label for="register-name">Nome</label>
+                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="register-name"
+                                id="register-name" autocomplete="name" minlength="2" maxlength="100" autofocus>
                         </section>
                         <section class="d-flex flex-column mt-3">
-                            <label for="login-username">Usuário<sup class="text-danger">*</sup></label>
-                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="login-username"
-                                id="login-username" autocomplete="username" minlength="2" maxlength="30" required>
+                            <label for="register-username">Usuário<sup class="text-danger">*</sup></label>
+                            <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="register-username"
+                                id="register-username" autocomplete="username" minlength="2" maxlength="30" required>
                         </section>
                         <section class="d-flex flex-column mt-3">
-                            <label class="fs-16" for="login-email">Email<sup class="text-danger">*</sup></label>
+                            <label class="fs-16" for="register-email">Email<sup class="text-danger">*</sup></label>
                             <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="email" inputmode="email"
-                                name="login-email" id="login-email" autocomplete="email" minlength="6" maxlength="100"
+                                name="register-email" id="register-email" autocomplete="email" minlength="6" maxlength="100"
                                 required>
                         </section>
                         <section class="d-flex flex-column flex-lg-row justify-content-between gap-lg-5 mt-3">
                             <div class="d-flex flex-column flex-grow-1">
-                                <label for="login-pass">Password<sup class="text-danger">*</sup></label>
+                                <label for="register-pass">Password<sup class="text-danger">*</sup></label>
                                 <input class="w-100 bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="password"
-                                    name="login-pass" id="login-pass" autocomplete="new-password" minlength="6"
+                                    name="register-pass" id="register-pass" autocomplete="new-password" minlength="6"
                                     maxlength="8" aria-describedby="pass-descriptor" required>
                             </div>
                             <div class="d-flex flex-column flex-grow-1 mt-3 mt-lg-0">
-                                <label for="login-pass-rep">Repetir password<sup class="text-danger">*</sup></label>
+                                <label for="register-pass-rep">Repetir password<sup class="text-danger">*</sup></label>
                                 <input class="w-100 bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="password"
-                                    name="login-pass-rep" id="login-pass-rep" autocomplete="new-password" minlength="6"
+                                    name="register-pass-rep" id="register-pass-rep" autocomplete="new-password" minlength="6"
                                     maxlength="8" aria-describedby="pass-descriptor" required>
                             </div>
                         </section>
@@ -88,9 +88,9 @@
                     <fieldset aria-labelledby="step-2-label">
 
                         <section class="d-flex flex-column mt-3">
-                            <label for="login-country">País<sup class="text-danger">*</sup></label>
+                            <label for="register-country">País<sup class="text-danger">*</sup></label>
                             <select class="bg-efefef border-0 rounded-03 py-2 ps-2 pe-3 custom-select-caret mt-1"
-                                name="login-country" id="login-country" required>
+                                name="register-country" id="register-country" required>
                                 <option value="option1">Opção 1</option>
                                 <option value="option2">Opção 2</option>
                                 <option value="option3">Opção 3</option>
@@ -98,9 +98,9 @@
                         </section>
 
                         <section class="d-flex flex-column mt-3">
-                            <label for="login-currency">Moeda<sup class="text-danger">*</sup></label>
+                            <label for="register-currency">Moeda<sup class="text-danger">*</sup></label>
                             <select class="bg-efefef border-0 rounded-03 py-2 ps-2 pe-3 custom-select-caret mt-1"
-                                name="login-currency" id="login-currency" required>
+                                name="register-currency" id="register-currency" required>
                                 <option value="eur">EUR</option>
                                 <option value="option2">Opção 2</option>
                                 <option value="option3">Opção 3</option>
@@ -108,26 +108,26 @@
                         </section>
 
                         <section class="d-flex flex-column mt-3">
-                            <label class="fs-16" for="login-tel">Telefone</label>
+                            <label class="fs-16" for="register-tel">Telefone</label>
                             <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="tel" inputmode="tel"
-                                name="login-tel" id="login-tel" autocomplete="tel" minlength="6" maxlength="15">
+                                name="register-tel" id="register-tel" autocomplete="tel" minlength="6" maxlength="15">
                         </section>
 
                         <section class="d-flex flex-column mt-3">
-                            <label class="fs-16" for="login-credit">Limite de crédito</label>
+                            <label class="fs-16" for="register-credit">Limite de crédito</label>
                             <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="tel" inputmode="tel"
-                                name="login-credit" id="login-credit" autocomplete="tel" min="0" max="1000000">
+                                name="register-credit" id="register-credit" autocomplete="tel" min="0" max="1000000">
                         </section>
 
                         <section class="form-check form-switch d-flex align-items-center mt-3 ps-0">
-                            <input class="form-check-input custom-login-switch border-0 order-2 mt-0" type="checkbox"
-                                id="login-state">
-                            <label class="form-check-label me-5" for="login-state">Estado - Inátivo</label>
+                            <input class="form-check-input custom-register-switch border-0 order-2 mt-0" type="checkbox"
+                                id="register-state">
+                            <label class="form-check-label me-5" for="register-state">Estado - Inátivo</label>
                         </section>
 
                         <section class="d-flex align-items-center mt-3 pb-2">
                             <input class="me-2 custom-checkbox" type="checkbox">
-                            <label for="login-terms">Li e concordo com os termos de Termos de Serviço</label>
+                            <label for="register-terms">Li e concordo com os termos de Termos de Serviço</label>
                         </section>
 
                         <button
