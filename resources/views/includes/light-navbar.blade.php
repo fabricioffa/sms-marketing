@@ -2,7 +2,7 @@
 
 $isChecked = [ 'unChecked', 'unChecked', 'unChecked' ];
 
-switch (Request::path()) {
+switch (request::path()) {
     case 'apis': $isChecked[1] = 'checked';
     break;
     case 'precos': $isChecked[2] = 'checked';

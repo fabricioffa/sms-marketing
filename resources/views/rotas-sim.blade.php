@@ -13,23 +13,25 @@
                         ROTAS
                         SIM
                         nunca foi tão descomplicado!</h1>
-                    <p class="col-xl-11 col-xxl-10 fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total
+                    <p class="col-lg-11 col-xxl-10 fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total
                         liberdade e segurança. Insira os números
                         diretamente ou insira números de teste para os quais a campanha será direcionada.</p>
                 </header>
 
                 <img class="d-block col-12 col-sm-10 col-lg-5 mt-5 mt-lg-0 mx-auto"
                     src="{{ asset('assets/imgs/banners/rotas-sim.svg') }}" alt="">
-                {{-- <div class="col-5 text-ballon bg-white rounded-10 font-archivo position-relative pt-3 pb-4">
-                        <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
-                            <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
-                            <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
-                        </div>
-                        <div class=" ps-4 pe-3">
-                            <p class="text-secondary fs-20-32 fw-500 pt-4 mt-2">0.019€ / por Sms</p>
-                            <a class="d-inline-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white btn-padding mt-5" href="{{ route('registro') }}">Registo grátis</a>
-                        </div>
-                    </div> --}}
+                {{-- <div class="col-11 col-lg-5 text-ballon bg-white balloon-shadow rounded-10 font-archivo position-relative mx-auto mx-lg-0 pt-3 pb-4">
+                    <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
+                        <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
+                        <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
+                    </div>
+                    <div class=" ps-4 pe-3">
+                        <p class="text-secondary fs-20-32 fw-500 pt-4 mt-2">0.019€ / por Sms</p>
+                        <a class="d-inline-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white btn-padding mt-5"
+                            href="{{ route('registro') }}">Registo grátis</a>
+                    </div>
+                    <img class="position-absolute balloon-tail" src="{{ asset('assets/imgs/vectors/balloon-tail.svg') }}" alt="">
+                </div> --}}
             </div>
         </div>
     </section>
