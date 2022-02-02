@@ -77,18 +77,18 @@
                 <div class="tab-pane fade bg-edeef0 rounded-30 py-2 mobile-show show active" id="panel-1" role="tabpanel"
                     aria-labelledby="panel-1-tab">
                     <div
-                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start py-4 mx-auto">
+                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start py-5 mx-auto">
                         <div class="text-primary ps-lg-2">
                             <img class="d-block d-lg-none mobile-size-icon mx-auto mb-4"
                                 src="{{ asset('assets/imgs/icons/close-btn.svg') }}" alt="" aria-hidden="true">
                             <h4 class="fs-20-24 fw-500 mb-4">Exclusão de números</h4>
-                            <p class="col-10 fw-light mx-auto">Segmente a sua base de dados através de qualquer um dos
+                            <p class="col-10 fw-light mx-auto mx-lg-0">Segmente a sua base de dados através de qualquer um dos
                                 campos
                                 incluídos, de forma a utilizar a mesma base de dados para diferentes campanhas.</p>
                         </div>
                         <div class="col-lg-7 mt-4 mt-lg-0">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/em-massa/panel-1.png') }}"
-                                alt="">
+                                alt="Painel com tabela de contatos, com opção de exportar e de excluir contato.">
                         </div>
                     </div>
                 </div>
@@ -96,12 +96,12 @@
                 <div class="tab-pane fade bg-edeef0 rounded-30 py-2 mobile-show mt-6 mt-lg-0" id="panel-2" role="tabpanel"
                     aria-labelledby="panel-2-tab">
                     <div
-                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start py-4 mx-auto">
+                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start py-5 mx-auto">
                         <div class="text-primary ps-lg-2">
                             <img class="d-block d-lg-none mobile-size-icon mx-auto mb-4"
                                 src="{{ asset('assets/imgs/icons/segmentation.svg') }}" alt="" aria-hidden="true">
                             <h4 class="fs-20-24 fw-500 mb-4">Segmentação de base de dados</h4>
-                            <p class="col-10 fw-light mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            <p class="col-10 fw-light mx-auto mx-lg-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 Saepe,
                                 sed
                                 optio
@@ -119,12 +119,12 @@
                 <div class="tab-pane fade bg-edeef0 rounded-30 py-2 mobile-show mt-6 mt-lg-0" id="panel-3" role="tabpanel"
                     aria-labelledby="panel-3-tab">
                     <div
-                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start  py-4 mx-auto">
+                        class="col-11 col-lg-10 d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start py-5 mx-auto">
                         <div class="text-primary ps-lg-2">
                             <img class="d-block d-lg-none mobile-size-icon mx-auto mb-4"
                                 src="{{ asset('assets/imgs/icons/nine.svg') }}" alt="" aria-hidden="true">
                             <h4 class="fs-20-24 fw-500 mb-4">Números de testes</h4>
-                            <p class="col-10 fw-light mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            <p class="col-10 fw-light mx-auto mx-lg-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                 Saepe,
                                 sed
                                 optio
@@ -185,7 +185,7 @@
                     <picture class="col-sm-9 col-xl-12 mx-autocol-11 col-md-12 col-lg-9 col-xl-12 mx-auto">
                         <source media="(min-width: 767.92px)"
                             srcset="{{ asset('assets/imgs/cards/em-massa/card-1.svg') }}">
-                        <img class="card-img-bottom" src="{{ asset('assets/imgs/cards/em-massa/card-1-small.svg') }}"
+                        <img class="card-img-bottom mt-4 mt-lg-0" src="{{ asset('assets/imgs/cards/em-massa/card-1-small.svg') }}"
                             alt="">
                     </picture>
                 </div>

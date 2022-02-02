@@ -66,7 +66,7 @@
 }
 
 .form-switch .form-check-input.custom-login-switch:checked {
-    background-color: #EFEFEF;
+    background-color: $secondary;
 }
 
 .custom-checkbox {
@@ -88,6 +88,10 @@
 
 .max-form-width {
     max-width: min(100%, 370px);
+}
+
+#step-2-label {
+    display: none;
 }
 
 

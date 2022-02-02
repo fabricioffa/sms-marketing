@@ -11380,10 +11380,12 @@ footer div.position-absolute {
 }
 
 .custom-gradient {
+  background: #fafafa;
   background: linear-gradient(to bottom, #fafafa 46%, #141415 39%);
 }
 @media (min-width: 992px) {
   .custom-gradient {
+    background: #fafafa;
     background: linear-gradient(to bottom, #fafafa 65%, #141415 35%);
   }
 }
@@ -11465,7 +11467,7 @@ footer div.position-absolute {
 }
 
 .form-switch .form-check-input.custom-login-switch:checked {
-  background-color: #EFEFEF;
+  background-color: #336ddb;
 }
 
 .custom-checkbox {
@@ -11491,6 +11493,10 @@ footer div.position-absolute {
 
 .max-form-width {
   max-width: min(100%, 370px);
+}
+
+#step-2-label {
+  display: none;
 }
 
 .rounded-02 {
@@ -11542,15 +11548,15 @@ footer div.position-absolute {
 }
 
 .font-archivo {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
 }
 
 .font-roboto {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .font-space-grotesk {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .text-005dbb {
@@ -11643,6 +11649,10 @@ footer div.position-absolute {
 
 .fs-16-18 {
   font-size: clamp(1rem, 0.9697rem + 0.1294vw, 1.125rem);
+}
+
+.fs-16-22 {
+  font-size: clamp(1rem, 0.909rem + 0.3883vw, 1.375rem);
 }
 
 .fs-18-20 {
@@ -11791,7 +11801,7 @@ footer div.position-absolute {
 }
 
 .tab-decoration-bar {
-  border: 5px solid #bdbdbd;
+  border: 3px solid #bdbdbd;
 }
 [aria-selected=true] ~ .tab-decoration-bar {
   border-color: #141415;

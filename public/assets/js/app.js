@@ -5259,6 +5259,8 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+__webpack_require__(/*! ./form-steps */ "./resources/js/form-steps.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5292,6 +5294,56 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/form-steps.js":
+/*!************************************!*\
+  !*** ./resources/js/form-steps.js ***!
+  \************************************/
+/***/ (() => {
+
+var progressBar = document.querySelector(".progress-bar");
+var labelsContainer = progressBar && document.querySelector(".labels-container");
+var fieldsetsNodeList = progressBar && document.querySelectorAll(".login fieldset");
+var nextBtnsNodeList = progressBar && document.querySelectorAll("[type=button]");
+var progressBarLabels = labelsContainer && Array.from(labelsContainer.children);
+var fieldsets = fieldsetsNodeList && Array.from(fieldsetsNodeList);
+var nextBtns = nextBtnsNodeList && Array.from(nextBtnsNodeList);
+
+var switchLabel = function switchLabel(direction) {
+  var currentLabel = progressBarLabels.find(function (label) {
+    return label.style.display === "block" || label.style.display === "";
+  });
+
+  if (direction === 1) {
+    currentLabel.style.display = "none";
+    currentLabel.nextElementSibling.style.display = "block";
+    return;
+  }
+
+  currentLabel.style.display = "none";
+  currentLabel.previousElementSibling.style.display = "block";
+  return;
+};
+
+var resizeProgressBar = function resizeProgressBar(change) {
+  var currentWidth = Number(progressBar.style.width.slice(0, -1));
+  progressBar.style.width = "".concat(currentWidth + change, "%");
+  progressBar.setAttribute("aria-valuenow", "".concat(currentWidth + change, "%"));
+};
+
+progressBarLabels === null || progressBarLabels === void 0 ? void 0 : progressBarLabels.slice(1).forEach(function (label) {
+  return label.style.display = "none";
+});
+nextBtns === null || nextBtns === void 0 ? void 0 : nextBtns.forEach(function (btn) {
+  return btn.addEventListener("click", function (e) {
+    switchLabel(1);
+    resizeProgressBar(50);
+    e.target.parentNode.parentNode.removeAttribute('aria-current');
+    e.target.parentNode.parentNode.nextElementSibling.setAttribute('aria-current', 'step');
+  });
+});
 
 /***/ }),
 

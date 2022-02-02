@@ -107,14 +107,14 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/earth.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active" id="panel-1-tab"
-                        data-bs-toggle="tab" data-bs-target="#panel-1" type="button" role="tab" aria-controls="panel-1"
-                        aria-selected="true">Estatísticas globais</button>
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active"
+                        id="panel-1-tab" data-bs-toggle="tab" data-bs-target="#panel-1" type="button" role="tab"
+                        aria-controls="panel-1" aria-selected="true">Estatísticas globais</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/tv.svg') }}" alt="" aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-2" type="button" role="tab" aria-controls="panel-2"
                         aria-selected="false">Diagramas completos</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
@@ -122,7 +122,7 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/euro.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-3" type="button" role="tab" aria-controls="panel-3"
                         aria-selected="false">Discriminação de
                         custos</button>
@@ -131,7 +131,7 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/graphics.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-4-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-4-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-4" type="button" role="tab" aria-controls="panel-4"
                         aria-selected="false">Estatísticas por
                         país</button>
@@ -140,7 +140,7 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/calendar.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-5-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-5-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-5" type="button" role="tab" aria-controls="panel-5"
                         aria-selected="false">Calendário de envios</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
@@ -148,7 +148,7 @@
                 <li class="nav-item col-lg-3 col-xxl-auto" role="presentation">
                     <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/upload.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-6-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-6-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-6" type="button" role="tab" aria-controls="panel-6"
                         aria-selected="false">Estado do envio</button>
                     <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
@@ -170,7 +170,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-1.png') }}"
-                                alt="">
+                                alt="Painel com gráfico de distribuição por país e tabela de custos.">
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-2.png') }}"
-                                alt="">
+                                alt="Painel com gráfico de envios totais, programados, manuais e externos.">
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-3.png') }}"
-                                alt="">
+                                alt="Painel com descriminação de custos por serviço e calendário de envios">
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-4.png') }}"
-                                alt="">
+                                alt="Painel com gráfico geográfico, com quantidade, stato e custo dos envios.">
                         </div>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-5.png') }}"
-                                alt="">
+                                alt="Painel com palendário dos envios.">
                         </div>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                         </div>
                         <div class="col-lg-7">
                             <img class="img-fluid rounded-12" src="{{ asset('assets/imgs/panels/home/panel-6.png') }}"
-                                alt="">
+                                alt="Painel com estado do envio e detalhes do envio.">
                         </div>
                     </div>
                 </div>
@@ -289,7 +289,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-1.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-1.png') }}"
+                                        alt="Painel com gráfico de distribuição por país e tabela de custos.">
                                 </div>
                             </div>
                         </div>
@@ -314,7 +315,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-2.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-2.png') }}"
+                                        alt="Painel com gráfico de envios totais, programados, manuais e externos.">
                                 </div>
                             </div>
                         </div>
@@ -339,7 +341,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-3.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-3.png') }}"
+                                        alt="Painel com descriminação de custos por serviço e calendário de envios">
                                 </div>
                             </div>
                         </div>
@@ -364,7 +367,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-4.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-4.png') }}"
+                                        alt="Painel com gráfico geográfico, com quantidade, stato e custo dos envios.">
                                 </div>
                             </div>
                         </div>
@@ -389,7 +393,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-5.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-5.png') }}"
+                                        alt="Painel com palendário dos envios.">
                                 </div>
                             </div>
                         </div>
@@ -414,7 +419,8 @@
                                 </div>
                                 <div class="mt-5">
                                     <img class="img-fluid rounded-12"
-                                        src="{{ asset('assets/imgs/panels/home/panel-6.png') }}" alt="">
+                                        src="{{ asset('assets/imgs/panels/home/panel-6.png') }}"
+                                        alt="Painel com estado do envio e detalhes do envio.">
                                 </div>
                             </div>
                         </div>
@@ -449,9 +455,9 @@
                         <a class="d-inline-block btn-padding bg-secondary rounded-4 text-decoration-none text-white fw-500 fs-18 mx-auto mt-4"
                             href="{{ route('registro') }}" role="button">Registro</a>
                     </header>
-                    <div class="col-11 col-sm-10 col-lg-8 col-xl-7 mx-auto mt-4 pt-3 pt-lg-0 mt-lg-5">
+                    <div class="col-11 col-sm-10 col-lg-8 mx-auto mt-4 pt-3 pt-lg-0 mt-lg-5">
                         <img class="rounded-12 panel-filter img-fluid"
-                            src="{{ asset('assets/imgs/panels/panel-6.png') }}" alt="">
+                            src="{{ asset('assets/imgs/panels/home/panel-7.svg') }}" alt="">
                     </div>
                 </div>
             </div>

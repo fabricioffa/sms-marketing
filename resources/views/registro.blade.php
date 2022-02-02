@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="login d-flex font-space-grotesk text-2b2d42 vh-100">
+    <div class="login d-flex font-space-grotesk text-2b2d42 min-vh-100">
         <aside class="col-3 d-none d-lg-block bg-primary">
             <a href="{{ route('homepage') }}"><img class="ps-5 ms-4 pt-5 mt-2"
                     src="{{ asset('assets/imgs/logos/login.svg') }}" alt="MTC logo - Home"></a>
@@ -21,7 +21,7 @@
                 </ol>
             </nav>
 
-            <div class="max-form-width mt-5 pt-4">
+            <div class="max-form-width mt-6 pt-5 pb-5 pb-lg-0">
                 <header class="text-start text-sm-center">
                     <h1 class="fs-36-40 fw-bold">Criar Conta</h1>
                     <p class="fw-500">Crie uma conta para usufruir do nosso serviço</p>
@@ -29,9 +29,9 @@
                 <form class="fs-14 fw-500" action="POST">
                     @csrf
                     <div>
-                        <h3 class="text-center fs-14 fw-500 text-2b2d42">
-                            <span>1 de 2</span>
-                            <span class="d-none">2 de 2</span>
+                        <h3 class="text-center fs-14 fw-500 text-2b2d42 labels-container">
+                            <span id="step-1-label">1 de 2</span>
+                            <span id="step-2-label">2 de 2</span>
                         </h3>
                         <div class="progress bg-2b2d42 align-items-center overflow-visible">
                             <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
@@ -39,7 +39,7 @@
                         </div>
                     </div>
 
-                    <fieldset aria-current="step">
+                    <fieldset aria-current="step" aria-labelledby="step-1-label">
                         <section class="d-flex flex-column mt-3">
                             <label for="login-name">Nome</label>
                             <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="login-name"
@@ -81,7 +81,7 @@
                         </section>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset aria-labelledby="step-2-label">
 
                         <section class="d-flex flex-column mt-3">
                             <label for="login-country">País<sup class="text-danger">*</sup></label>

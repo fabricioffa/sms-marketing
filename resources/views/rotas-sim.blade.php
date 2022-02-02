@@ -13,7 +13,7 @@
                         ROTAS
                         SIM
                         nunca foi tão descomplicado!</h1>
-                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total
+                    <p class="col-xl-11 col-xxl-10 fs-18-20 fw-500">Gira com total confiança as suas bases de dados com total
                         liberdade e segurança. Insira os números
                         diretamente ou insira números de teste para os quais a campanha será direcionada.</p>
                 </header>

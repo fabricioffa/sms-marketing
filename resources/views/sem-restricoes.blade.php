@@ -10,7 +10,7 @@
             <div class="d-flex flex-column flex-lg-row">
                 <header class="font-space-grotesk text-center text-lg-start text-0e">
                     <h1 class="fs-36-50 fw-bold ls-1 mb-3">Envie SMS sem restrições</h1>
-                    <p class="col-xl-11 col-xxl-10fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de
+                    <p class="col-xl-11 col-xxl-10 fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de
                         conteúdo.
                         Mytelecom.pt. do grupo Webhouse, assugura-lhe todos os canais de comunicação em massa.</p>
                 </header>
@@ -183,10 +183,10 @@
                 <div
                     class="d-flex flex-column flex-lg-row align-items-start align-items-start align-items-sm-center justify-content-lg-between pt-2 pt-lg-3 pb-5">
                     <header
-                        class="col-lg-8 col-xl-6 col-xxl-5 text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
-                        <h2 class="fs-30 fw-bold mb-3">
+                        class="col-lg-9 col-xl-7 col-xxl-6 text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
+                        <h2 class="fs-30-36 fw-bold mb-3">
                             Internacionalmente, atuamos em outros países também, tais como:</h2>
-                        <p class="fs-18 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a nossa
+                        <p class="fs-16-22 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a nossa
                             rede de SMS
                             Internacionais.</p>
                     </header>

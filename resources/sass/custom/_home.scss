@@ -11,9 +11,11 @@
 }
 
 .custom-gradient {
+    background: #fafafa;
     background: linear-gradient(to bottom, #fafafa 46%, #141415 39%);
 
     @include media-breakpoint-up(lg) {
+        background: #fafafa;
         background: linear-gradient(to bottom, #fafafa 65%, #141415 35%);
     }
 }
