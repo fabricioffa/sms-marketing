@@ -1,9 +1,5 @@
 @extends('layouts.registro')
 
-<div class="d-lg-none">
-    @include('includes.light-navbar')
-</div>
-
 @section('content')
 
     <div class="login d-flex font-space-grotesk text-2b2d42 vh-100">
@@ -15,7 +11,9 @@
         </aside>
 
         <main class="d-flex justify-content-center align-items-center bg-fa flex-grow-1 position-relative">
-            <nav class="fs-16 position-absolute d-none d-lg-block" aria-label="breadcrumb">
+            <img class="position-absolute d-lg-none" src="{{ asset('assets/imgs/logos/light-navbar.svg') }}" alt="MTC logo">
+
+            <nav class="fs-16 position-absolute" aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active text-end "><a class="fs-15"
                             href="{{ url()->previous() }}">Voltar para a pagina inicial</a>
@@ -23,25 +21,25 @@
                 </ol>
             </nav>
 
-            <div class="col-11 col-sm-8 col-md-7 col-lg-6 col-xl-5 col-xxl-4 max-form-width">
+            <div class="max-form-width mt-5 pt-4">
                 <header class="text-start text-sm-center">
                     <h1 class="fs-36-40 fw-bold">Criar Conta</h1>
                     <p class="fw-500">Crie uma conta para usufruir do nosso serviço</p>
                 </header>
                 <form class="fs-14 fw-500" action="POST">
-
+                    @csrf
                     <div>
-                        <p class="text-center fs-14 fw-500 text-2b2d42">
+                        <h3 class="text-center fs-14 fw-500 text-2b2d42">
                             <span>1 de 2</span>
                             <span class="d-none">2 de 2</span>
-                        </p>
-                        <div class="progress bg-2b2d42 align-items-center">
-                            <div class="progress-bar bg-secondary h-100" role="progressbar" style="width: 50%"
+                        </h3>
+                        <div class="progress bg-2b2d42 align-items-center overflow-visible">
+                            <div class="progress-bar bg-secondary" role="progressbar" style="width: 50%"
                                 aria-valuenow="50" aria-valuemin="50" aria-valuemax="100"></div>
                         </div>
                     </div>
 
-                    <fieldset>
+                    <fieldset aria-current="step">
                         <section class="d-flex flex-column mt-3">
                             <label for="login-name">Nome</label>
                             <input class="bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="text" name="login-name"
@@ -58,20 +56,21 @@
                                 name="login-email" id="login-email" autocomplete="email" minlength="6" maxlength="100"
                                 required>
                         </section>
-                        <section class="d-flex justify-content-between gap-5 mt-3">
+                        <section class="d-flex flex-column flex-lg-row justify-content-between gap-lg-5 mt-3">
                             <div class="d-flex flex-column flex-grow-1">
                                 <label for="login-pass">Password<sup class="text-danger">*</sup></label>
                                 <input class="w-100 bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="password"
                                     name="login-pass" id="login-pass" autocomplete="new-password" minlength="6"
-                                    maxlength="8" required>
+                                    maxlength="8" aria-describedby="pass-descriptor" required>
                             </div>
-                            <div class="d-flex flex-column flex-grow-1">
+                            <div class="d-flex flex-column flex-grow-1 mt-3 mt-lg-0">
                                 <label for="login-pass-rep">Repetir password<sup class="text-danger">*</sup></label>
                                 <input class="w-100 bg-efefef border-0 rounded-03 py-2 ps-3 mt-1" type="password"
                                     name="login-pass-rep" id="login-pass-rep" autocomplete="new-password" minlength="6"
-                                    maxlength="8" required>
+                                    maxlength="8" aria-describedby="pass-descriptor" required>
                             </div>
                         </section>
+                        <p class="fs-14 fw-500 text-96 mt-2" id="pass-descriptor">A sua senha deverá conter entre 6 a 8 caracteres</p>
                         <section class="mt-5 text-center">
                             <button
                                 class="d-block bg-secondary rounded-4 border-0 font-archivo fs-15 text-white mx-auto py-2 px-5"
@@ -82,7 +81,7 @@
                         </section>
                     </fieldset>
 
-                    <fieldset  aria-current="step">
+                    <fieldset>
 
                         <section class="d-flex flex-column mt-3">
                             <label for="login-country">País<sup class="text-danger">*</sup></label>

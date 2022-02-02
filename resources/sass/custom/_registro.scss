@@ -1,11 +1,24 @@
 .login {
+    img[alt="MTC logo"] {
+        top: 1.5%;
+        left: 5%;
+    }
+
     nav {
-        top: 5%;
+        top: 1.5%;
         right: 5%;
+
+        @include media-breakpoint-up(lg) {
+            top: 5%;
+        }
     }
 
     .progress {
-        height: 2px;
+        height: 1px;
+    }
+
+    .progress-bar {
+        height: 3px;
     }
 
     fieldset {
