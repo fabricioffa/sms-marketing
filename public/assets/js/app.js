@@ -5303,6 +5303,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
   \************************************/
 /***/ (() => {
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
+
+function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError("Cannot initialize the same private elements twice on an object"); } }
+
+function _classPrivateFieldGet(receiver, privateMap) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "get"); return _classApplyDescriptorGet(receiver, descriptor); }
+
+function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
+
+function _classApplyDescriptorGet(receiver, descriptor) { if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
+
 var progressBar = document.querySelector(".progress-bar");
 var labelsContainer = progressBar && document.querySelector(".labels-container");
 var fieldsetsNodeList = progressBar && document.querySelectorAll(".register fieldset");
@@ -5311,39 +5327,141 @@ var progressBarLabels = labelsContainer && Array.from(labelsContainer.children);
 var fieldsets = fieldsetsNodeList && Array.from(fieldsetsNodeList);
 var nextBtns = nextBtnsNodeList && Array.from(nextBtnsNodeList);
 
-var switchLabel = function switchLabel(direction) {
-  var currentLabel = progressBarLabels.find(function (label) {
-    return label.style.display === "block" || label.style.display === "";
-  });
+var _to = /*#__PURE__*/new WeakMap();
 
-  if (direction === 1) {
-    currentLabel.style.display = "none";
-    currentLabel.nextElementSibling.style.display = "block";
-    return;
+var _current = /*#__PURE__*/new WeakMap();
+
+var _by = /*#__PURE__*/new WeakMap();
+
+var StepFormController = /*#__PURE__*/function () {
+  function StepFormController(steps, labels, progressBar, nextBtns, prevBtns) {
+    _classCallCheck(this, StepFormController);
+
+    _classPrivateFieldInitSpec(this, _to, {
+      writable: true,
+      value: {
+        next: 1,
+        previous: 0
+      }
+    });
+
+    _classPrivateFieldInitSpec(this, _current, {
+      writable: true,
+      value: {
+        step: 0,
+        label: 0
+      }
+    });
+
+    _classPrivateFieldInitSpec(this, _by, {
+      writable: true,
+      value: {
+        incrementing: 1,
+        decrementing: -1
+      }
+    });
+
+    this.steps = steps;
+    this.labels = labels;
+    this.progressBar = progressBar;
+    this.nextBtns = nextBtns;
+    this.prevBtns = prevBtns;
+    this.init();
   }
 
-  currentLabel.style.display = "none";
-  currentLabel.previousElementSibling.style.display = "block";
-  return;
-};
+  _createClass(StepFormController, [{
+    key: "checkArg",
+    value: function checkArg(arg) {
+      var isOptional = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+      var canBeElement = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var mustBeElement = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+      if (isOptional && typeof arg === 'undefined') return;
+      if (mustBeElement && !arg instanceof Element) throw new TypeError("Parameter ".concat(arg, " must be an instance of Element."));
+      if (!Array.isArray(arg) && !arg instanceof NodeList && (canBeElement && !arg instanceof Element || !canBeElement)) throw new TypeError("Paramenter ".concat(arg, " must be an instance of Array").concat(!canBeElement ? ' or NodeList' : ', NodeList or Element', ". Received ").concat(arg.constructor.name, " instead."));
+      if (!arg.length && (Array.isArray(arg) || arg instanceof NodeList)) throw new TypeError("Parameter ".concat(arg, " cannot be empty."));
+      !arg instanceof Element && arg.forEach(function (argField) {
+        if (!argField instanceof Element) {
+          throw new TypeError("Paramenter ".concat(arg, " must contain only instances of Element. Received an instance of ").concat(argField.constructor.name, " instead."));
+        }
+      });
+    }
+  }, {
+    key: "argsAreValid",
+    value: function argsAreValid() {
+      this.checkArg(this.steps, false, false);
+      this.checkArg(this.labels, true, false);
+      this.checkArg(this.progressBar, true, true, true);
+      this.checkArg(this.nextBtns, false, true);
+      this.checkArg(this.prevBtns);
+    }
+  }, {
+    key: "init",
+    value: function init() {
+      var _this = this,
+          _this$prevBtns;
 
-var resizeProgressBar = function resizeProgressBar(change) {
-  var currentWidth = Number(progressBar.style.width.slice(0, -1));
-  progressBar.style.width = "".concat(currentWidth + change, "%");
-  progressBar.setAttribute("aria-valuenow", "".concat(currentWidth + change, "%"));
-};
+      this.argsAreValid();
+      this.labels && this.hideLabels();
+      this.nextBtns.forEach(function (btn) {
+        return btn.addEventListener("click", function () {
+          _this.labels && _this.switchLabel(_classPrivateFieldGet(_this, _to).next);
+          _this.progressBar && _this.resizeProgressBar(_classPrivateFieldGet(_this, _by).incrementing);
 
-progressBarLabels === null || progressBarLabels === void 0 ? void 0 : progressBarLabels.slice(1).forEach(function (label) {
-  return label.style.display = "none";
-});
-nextBtns === null || nextBtns === void 0 ? void 0 : nextBtns.forEach(function (btn) {
-  return btn.addEventListener("click", function (e) {
-    switchLabel(1);
-    resizeProgressBar(50);
-    e.target.parentNode.parentNode.removeAttribute('aria-current');
-    e.target.parentNode.parentNode.nextElementSibling.setAttribute('aria-current', 'step');
-  });
-});
+          _this.switchSteps(_classPrivateFieldGet(_this, _to).next);
+        });
+      });
+      (_this$prevBtns = this.prevBtns) === null || _this$prevBtns === void 0 ? void 0 : _this$prevBtns.forEach(function (btn) {
+        return btn.addEventListener("click", function () {
+          _this.labels && _this.switchLabel(_classPrivateFieldGet(_this, _to).previous);
+          _this.progressBar && _this.resizeProgressBar(_classPrivateFieldGet(_this, _by).decrementing);
+
+          _this.switchSteps(_classPrivateFieldGet(_this, _to).previous);
+        });
+      });
+    }
+  }, {
+    key: "hideLabels",
+    value: function hideLabels() {
+      var _this$labels;
+
+      (_this$labels = this.labels) === null || _this$labels === void 0 ? void 0 : _this$labels.slice(1).forEach(function (label) {
+        return label.style.display = "none";
+      });
+    }
+  }, {
+    key: "switchLabel",
+    value: function switchLabel(toNext) {
+      this.labels[_classPrivateFieldGet(this, _current).label].style.display = "none";
+      if (toNext) return this.labels[++_classPrivateFieldGet(this, _current).label].style.display = "block";
+      this.labels[--_classPrivateFieldGet(this, _current).label].style.display = "block";
+    }
+  }, {
+    key: "progressBarStep",
+    value: function progressBarStep() {
+      return this.progressBar.getAttribute('aria-valuemax') / this.labels.length;
+    }
+  }, {
+    key: "resizeProgressBar",
+    value: function resizeProgressBar(widthAdded) {
+      var currentWidth = Number(this.progressBar.style.width.slice(0, -1));
+      widthAdded *= this.progressBarStep();
+      this.progressBar.style.width = "".concat(currentWidth + widthAdded, "%");
+      this.progressBar.setAttribute("aria-valuenow", "".concat(currentWidth + widthAdded, "%"));
+    }
+  }, {
+    key: "switchSteps",
+    value: function switchSteps(toNext) {
+      this.steps[_classPrivateFieldGet(this, _current).step].removeAttribute('aria-current');
+
+      if (toNext) return this.steps[++_classPrivateFieldGet(this, _current).step].setAttribute('aria-current', 'step');
+      this.steps[--_classPrivateFieldGet(this, _current).step].setAttribute('aria-current', 'step');
+    }
+  }]);
+
+  return StepFormController;
+}();
+
+var formStep = progressBar && new StepFormController(fieldsets, progressBarLabels, progressBar, nextBtns);
 
 /***/ }),
 
