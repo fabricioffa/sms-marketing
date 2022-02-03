@@ -34,33 +34,33 @@ class StepFormController {
         decrementing: -1,
     }
 
-    checkArg(arg, isOptional = true, canBeElement = true, mustBeElement = false) {
+    checkArg(arg, argName, isOptional = true, canBeElement = true, mustBeElement = false) {
         if (isOptional && typeof arg === 'undefined') return;
 
-        if (mustBeElement && !arg instanceof Element)
-            throw new TypeError(`Parameter ${arg} must be an instance of Element.`);
+        if (mustBeElement && !(arg instanceof Element))
+            throw new TypeError(`Parameter ${argName} must be an instance of Element. Received an instance of ${arg.constructor.name} instead.` );
 
         if (!Array.isArray(arg)
-            && !arg instanceof NodeList
-            && ((canBeElement && !arg instanceof Element) || (!canBeElement)) )
-            throw new TypeError(`Paramenter ${arg} must be an instance of Array${!canBeElement ? ' or NodeList' : ', NodeList or Element'}. Received ${arg.constructor.name} instead.`);
+            && !(arg instanceof NodeList)
+            && ((canBeElement && !(arg instanceof Element)) || (!canBeElement)))
+            throw new TypeError(`Paramenter ${argName} must be an instance of Array${!canBeElement ? ' or NodeList' : ', NodeList or Element'}. Received an instance of ${arg.constructor.name} instead.`);
 
-        if (!arg.length && (Array.isArray(arg) || arg instanceof NodeList)  )
-            throw new TypeError(`Parameter ${arg} cannot be empty.`);
+        if (!arg.length && (Array.isArray(arg) || arg instanceof NodeList))
+            throw new TypeError(`Parameter ${argName} cannot be empty.`);
 
-        !arg instanceof Element && arg.forEach(argField => {
-            if (!argField instanceof Element) {
-                throw new TypeError(`Paramenter ${arg} must contain only instances of Element. Received an instance of ${argField.constructor.name} instead.`);
+        !(arg instanceof Element) && arg.forEach(argField => {
+            if (!(argField instanceof Element)) {
+                throw new TypeError(`Paramenter ${argName} must contain only instances of Element, but contains ${argField.constructor.name} instead.`);
             }
         });
     }
 
     argsAreValid() {
-       this.checkArg(this.steps, false, false);
-       this.checkArg(this.labels, true, false);
-       this.checkArg(this.progressBar, true, true, true);
-       this.checkArg(this.nextBtns, false, true);
-       this.checkArg(this.prevBtns);
+        this.checkArg(this.steps, 'steps', false, false);
+        this.checkArg(this.labels, 'labels', true, false);
+        this.checkArg(this.progressBar, 'progressBar', true, true, true);
+        this.checkArg(this.nextBtns, 'nextBtns', false, true);
+        this.checkArg(this.prevBtns, 'prevBtns');
     }
 
     init() {

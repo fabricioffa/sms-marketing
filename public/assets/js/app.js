@@ -5371,28 +5371,28 @@ var StepFormController = /*#__PURE__*/function () {
 
   _createClass(StepFormController, [{
     key: "checkArg",
-    value: function checkArg(arg) {
-      var isOptional = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-      var canBeElement = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      var mustBeElement = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    value: function checkArg(arg, argName) {
+      var isOptional = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var canBeElement = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
+      var mustBeElement = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
       if (isOptional && typeof arg === 'undefined') return;
-      if (mustBeElement && !arg instanceof Element) throw new TypeError("Parameter ".concat(arg, " must be an instance of Element."));
-      if (!Array.isArray(arg) && !arg instanceof NodeList && (canBeElement && !arg instanceof Element || !canBeElement)) throw new TypeError("Paramenter ".concat(arg, " must be an instance of Array").concat(!canBeElement ? ' or NodeList' : ', NodeList or Element', ". Received ").concat(arg.constructor.name, " instead."));
-      if (!arg.length && (Array.isArray(arg) || arg instanceof NodeList)) throw new TypeError("Parameter ".concat(arg, " cannot be empty."));
-      !arg instanceof Element && arg.forEach(function (argField) {
-        if (!argField instanceof Element) {
-          throw new TypeError("Paramenter ".concat(arg, " must contain only instances of Element. Received an instance of ").concat(argField.constructor.name, " instead."));
+      if (mustBeElement && !(arg instanceof Element)) throw new TypeError("Parameter ".concat(argName, " must be an instance of Element. Received an instance of ").concat(arg.constructor.name, " instead."));
+      if (!Array.isArray(arg) && !(arg instanceof NodeList) && (canBeElement && !(arg instanceof Element) || !canBeElement)) throw new TypeError("Paramenter ".concat(argName, " must be an instance of Array").concat(!canBeElement ? ' or NodeList' : ', NodeList or Element', ". Received an instance of ").concat(arg.constructor.name, " instead."));
+      if (!arg.length && (Array.isArray(arg) || arg instanceof NodeList)) throw new TypeError("Parameter ".concat(argName, " cannot be empty."));
+      !(arg instanceof Element) && arg.forEach(function (argField) {
+        if (!(argField instanceof Element)) {
+          throw new TypeError("Paramenter ".concat(argName, " must contain only instances of Element, but contains ").concat(argField.constructor.name, " instead."));
         }
       });
     }
   }, {
     key: "argsAreValid",
     value: function argsAreValid() {
-      this.checkArg(this.steps, false, false);
-      this.checkArg(this.labels, true, false);
-      this.checkArg(this.progressBar, true, true, true);
-      this.checkArg(this.nextBtns, false, true);
-      this.checkArg(this.prevBtns);
+      this.checkArg(this.steps, 'steps', false, false);
+      this.checkArg(this.labels, 'labels', true, false);
+      this.checkArg(this.progressBar, 'progressBar', true, true, true);
+      this.checkArg(this.nextBtns, 'nextBtns', false, true);
+      this.checkArg(this.prevBtns, 'prevBtns');
     }
   }, {
     key: "init",
