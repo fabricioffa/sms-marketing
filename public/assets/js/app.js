@@ -5261,6 +5261,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./form-steps */ "./resources/js/form-steps.js");
 
+__webpack_require__(/*! ./statistics-tablist */ "./resources/js/statistics-tablist.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5462,6 +5464,25 @@ var StepFormController = /*#__PURE__*/function () {
 }();
 
 var formStep = progressBar && new StepFormController(fieldsets, progressBarLabels, progressBar, nextBtns);
+
+/***/ }),
+
+/***/ "./resources/js/statistics-tablist.js":
+/*!********************************************!*\
+  !*** ./resources/js/statistics-tablist.js ***!
+  \********************************************/
+/***/ (() => {
+
+var navItems = document.querySelectorAll('#panels-tablist .nav-item');
+navItems === null || navItems === void 0 ? void 0 : navItems.forEach(function (navItem) {
+  var navLink = navItem.querySelector('.nav-link');
+  navItem.querySelector('img').addEventListener('click', function () {
+    return navLink.click();
+  });
+  navItem.querySelector('.tab-decoration-bar').addEventListener('click', function () {
+    return navLink.click();
+  });
+});
 
 /***/ }),
 

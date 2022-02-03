@@ -45,34 +45,34 @@
             </header>
 
             <ul class="nav nav-tabs d-none d-lg-flex gap-5 justify-content-center border-0 mt-5 mx-auto"
-                id="statistics-tablist" role="tablist">
+                id="panels-tablist" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/close-btn.svg') }}" alt=""
+                    <img class="d-block mx-auto cursor-pointer" src="{{ asset('assets/imgs/icons/close-btn.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active" id="panel-1-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0 active" id="panel-1-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-1" type="button" role="tab" aria-controls="panel-1"
                         aria-selected="true">Exclusão de números</button>
-                    <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
+                    <div class="rounded-pill tab-decoration-bar cursor-pointer" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item ms-3" role="presentation">
-                    <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/segmentation.svg') }}" alt=""
+                    <img class="d-block mx-auto cursor-pointer" src="{{ asset('assets/imgs/icons/segmentation.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-2-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-2" type="button" role="tab" aria-controls="panel-2"
                         aria-selected="false">Segmentação de base de dados</button>
-                    <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
+                    <div class="rounded-pill tab-decoration-bar cursor-pointer" aria-hidden="true"></div>
                 </li>
                 <li class="nav-item ms-3" role="presentation">
-                    <img class="d-block mx-auto" src="{{ asset('assets/imgs/icons/nine.svg') }}" alt=""
+                    <img class="d-block mx-auto cursor-pointer" src="{{ asset('assets/imgs/icons/nine.svg') }}" alt=""
                         aria-hidden="true">
-                    <button class="nav-link fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab"
+                    <button class="nav-link bg-transparent fs-18 fw-500 border-0 px-0 mx-auto mx-xxl-0" id="panel-3-tab"
                         data-bs-toggle="tab" data-bs-target="#panel-3" type="button" role="tab" aria-controls="panel-3"
                         aria-selected="false">Números de testes</button>
-                    <div class="rounded-pill tab-decoration-bar" aria-hidden="true"></div>
+                    <div class="rounded-pill tab-decoration-bar cursor-pointer" aria-hidden="true"></div>
                 </li>
             </ul>
 
-            <div class="tab-content pt-lg-6" id="statistics-tablist-content">
+            <div class="tab-content pt-lg-6" id="panels-tablist-content">
 
                 <div class="tab-pane fade bg-edeef0 rounded-30 py-2 mobile-show show active" id="panel-1" role="tabpanel"
                     aria-labelledby="panel-1-tab">

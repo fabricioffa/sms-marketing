@@ -11501,6 +11501,10 @@ footer div.position-absolute {
   display: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .rounded-02 {
   border-radius: 2px;
 }
@@ -11566,7 +11570,7 @@ footer div.position-absolute {
 }
 
 .text-00685c {
-  color: #00685C;
+  color: #00685c;
 }
 
 .text-d3d2 {
@@ -11574,7 +11578,7 @@ footer div.position-absolute {
 }
 
 .text-ac8e00 {
-  color: #AC8E00;
+  color: #ac8e00;
 }
 
 .text-ef {
@@ -11673,8 +11677,8 @@ footer div.position-absolute {
   font-size: clamp(1.25rem, 1.1893rem + 0.2589vw, 1.5rem);
 }
 
-.fs-20-32 {
-  font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem);
+.fs-18-32 {
+  font-size: clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem);
 }
 
 .fs-22-32 {
@@ -11726,11 +11730,11 @@ footer div.position-absolute {
 }
 
 .bg-a0fff4 {
-  background-color: #A0FFF4;
+  background-color: #a0fff4;
 }
 
 .bg-ffee9c {
-  background-color: #FFEE9C;
+  background-color: #ffee9c;
 }
 
 .bg-1d1e1f {
@@ -11738,11 +11742,11 @@ footer div.position-absolute {
 }
 
 .bg-2b2d42 {
-  background-color: #2B2D42;
+  background-color: #2b2d42;
 }
 
 .bg-efefef {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .bg-edeef0 {
@@ -11769,11 +11773,20 @@ footer div.position-absolute {
   .pt-lg-6 {
     padding-top: 6.25rem !important;
   }
+}
 
+@media (min-width: 992px) {
   .pb-lg-6 {
     padding-bottom: 6.25rem !important;
   }
 }
+
+@media (min-width: 992px) {
+  .mt-lg-6 {
+    margin-top: 6.25rem !important;
+  }
+}
+
 @media (min-width: 576px) {
   .gap-lg-custom-1 {
     gap: 32px 28px !important;
@@ -11820,12 +11833,55 @@ footer div.position-absolute {
 }
 
 .balloon-tail {
-  width: 23%;
+  width: 17%;
   height: auto;
-  bottom: -21%;
+  top: 98%;
   right: 5%;
 }
+@media (min-width: 576px) {
+  .balloon-tail {
+    width: 14%;
+  }
+}
+@media (min-width: 768px) {
+  .balloon-tail {
+    width: 12%;
+  }
+}
+@media (min-width: 992px) {
+  .balloon-tail {
+    width: 18%;
+  }
+}
+@media (min-width: 992px) {
+  .balloon-tail {
+    width: 15%;
+  }
+}
 
-.balloon-shadow {
-  box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 0.08);
+.banner-balloon {
+  height: 270px;
+  box-shadow: -1px 2px 15px 0px rgba(0, 0, 0, 0.11);
+}
+@media (max-width: 575.98px) {
+  .banner-balloon {
+    height: 175px;
+    width: 335px;
+  }
+}
+@media (min-width: 992px) {
+  .banner-balloon {
+    margin-bottom: 80px !important;
+  }
+}
+.banner-balloon [role=button] {
+  font-size: 0.988rem;
+  padding: 12px 27px 11px 29px !important;
+}
+@media (min-width: 576px) {
+  .banner-balloon [role=button] {
+    margin-bottom: 2.6rem !important;
+    padding: 13px 41px;
+    font-size: 1.188rem;
+  }
 }

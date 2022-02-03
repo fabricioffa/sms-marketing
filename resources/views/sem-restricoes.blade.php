@@ -5,35 +5,37 @@
 @include('includes.light-navbar')
 
 @section('banner')
-    <section class="bg-fa pt-6 pb-lg-6">
+    <section class="bg-white pt-6 pb-lg-6">
         <div class="container pt-4 pt-lg-5 mt-lg-5">
             <div class="d-flex flex-column flex-lg-row">
-                <header class="font-space-grotesk text-center text-lg-start text-0e">
+                <header class="font-space-grotesk text-center text-lg-start text-0e pb-4 pb-lg-0">
                     <h1 class="fs-36-50 fw-bold ls-1 mb-3">Envie SMS sem restrições</h1>
-                    <p class="col-xl-11 col-xxl-10 fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de
+                    <p class="col-lg-10 col-xl-11 col-xxl-10 fs-18-20 fw-500">Envie SMS através das nossas rotas sem restrições de
                         conteúdo.
                         Mytelecom.pt. do grupo Webhouse, assugura-lhe todos os canais de comunicação em massa.</p>
                 </header>
 
-                <img class="d-block col-12 col-sm-10 col-lg-5 mt-5 mt-lg-0 mx-auto"
-                    src="{{ asset('assets/imgs/banners/para-empresa.svg') }}" alt="">
-                {{-- <div class="col-5 text-ballon bg-white rounded-10 font-archivo position-relative pt-3 pb-4">
-                        <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
-                            <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
-                            <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
-                        </div>
-                        <div class=" ps-4 pe-3">
-                            <p class="text-secondary fs-20-32 fw-500 pt-4 mt-2">0.019€ / por Sms</p>
-                            <a class="d-inline-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white btn-padding mt-5" href="{{ route('registro') }}">Registo grátis</a>
-                        </div>
-                    </div> --}}
+                <div
+                    class="banner-balloon col-sm-10 col-md-8 col-lg-5 align-self-lg-end bg-white rounded-10 font-archivo position-relative mx-auto mx-lg-0 pt-3 pb-4 my-5 mb-lg-0 mt-lg-6">
+                    <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
+                        <h4 class="fw-500 fs-16-22 text-0e">Para Portugal</h4>
+                        <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
+                    </div>
+                    <div class="d-flex flex-column align-items-start ps-4 pe-3 h-100">
+                        <p class="text-secondary fs-18-32 fw-500 pt-sm-4 mt-2">0.019€ / por Sms</p>
+                        <a class="d-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white mt-2 mt-sm-auto"
+                            href="{{ route('registro') }} " role="button">Registo grátis</a>
+                    </div>
+                    <img class="balloon-tail position-absolute" src="{{ asset('assets/imgs/vectors/balloon-tail.svg') }}"
+                        alt="">
+                </div>
             </div>
         </div>
     </section>
 @endsection
 
 @section('content')
-    <section class="bg-fa font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
+    <section class="bg-white font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
         <div class="container pt-5 pt-lg-0 pb-4 pb-lg-0 gx-3">
 
             <div class="bg-edeef0 rounded-12 rounded-lg-30 p-4 p-md-5">
@@ -176,7 +178,7 @@
 
     </section>
 
-    <section class="bg-fa font-space-grotesk pt-lg-5 pb-5 pb-lg-6 mb-4">
+    <section class="bg-white font-space-grotesk pt-lg-5 pb-5 pb-lg-6 mb-4">
         <div class="container pt-3 pt-lg-5 pb-4 pb-lg-6 mb-5 gx-3">
 
             <div class="bg-edeef0 rounded-12 rounded-lg-30 p-4 p-md-5">
@@ -186,7 +188,8 @@
                         class="col-lg-9 col-xl-7 col-xxl-6 text-0e text-start text-sm-center text-lg-start mb-4 mb-lg-0">
                         <h2 class="fs-30-36 fw-bold mb-3">
                             Internacionalmente, atuamos em outros países também, tais como:</h2>
-                        <p class="fs-16-22 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a nossa
+                        <p class="fs-16-22 fw-500 ">Se possui o interesse em mercados internacionais, conte agora com a
+                            nossa
                             rede de SMS
                             Internacionais.</p>
                     </header>

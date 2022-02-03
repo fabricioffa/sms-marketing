@@ -1,17 +1,17 @@
 @extends('layouts.master')
 
-@section('title', 'Preços')
+@section('title', 'SMS\'s massivos para empresa')
 
 @include('includes.light-navbar')
 
 @section('banner')
-    <section class="bg-fa pt-6">
-        <div class="container pt-4 pt-lg-5 mt-lg-5">
+    <section class="bg-fa pt-6 pt-lg-5 pt-xl-6 pb-5 pb-lg-6">
+        <div class="container pt-4 pt-lg-6 mt-lg-5 mb-xl-5">
             <h1 class="fs-36-50 fw-bold text-center text-lg-start font-space-grotesk ls-1 mb-5">Que soluções oferece a My
                 Telecom?</h1>
-            <div class="d-flex flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
                 <ul
-                    class="col-lg-7 list-unstyled font-space-grotesk fs-18-22 fw-500 checked-marker ps-5 ms-sm-4 ps-lg-4 ms-lg-3">
+                    class="col-lg-6 list-unstyled font-space-grotesk fs-18-22 fw-500 checked-marker ps-5 ms-sm-4 ps-lg-4 ms-lg-3 pb-5 pb-lg-0">
                     <li class="position-relative">Alcance mundial - SMS em Massa.</li>
                     <li class="position-relative my-3">Serviços SMS Gateway e Bulk SMS.</li>
                     <li class="position-relative">O software mais intuitivo para as Campanhas de SMS.</li>
@@ -20,18 +20,20 @@
                         assunto.</li>
                     <li class="position-relative mt-3">Alta rentabilidade, investimento báixo.</li>
                 </ul>
-                <img class="d-block col-12 col-sm-10 col-lg-5 mt-5 mt-lg-0 mx-auto"
-                    src="{{ asset('assets/imgs/banners/para-empresa.svg') }}" alt="">
-                {{-- <div class="col-5 text-ballon bg-white rounded-10 font-archivo position-relative pt-3 pb-4">
-                        <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
-                            <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
-                            <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
-                        </div>
-                        <div class=" ps-4 pe-3">
-                            <p class="text-secondary fs-20-32 fw-500 pt-4 mt-2">0.019€ / por Sms</p>
-                            <a class="d-inline-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white btn-padding mt-5" href="{{ route('registro') }}">Registo grátis</a>
-                        </div>
-                    </div> --}}
+                <div
+                    class="banner-balloon col-sm-10 col-md-8 col-lg-5 align-self-lg-end bg-white rounded-10 font-archivo position-relative mx-auto mx-lg-0 pt-3 pb-4 my-5 mb-lg-0 mt-lg-4">
+                    <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
+                        <h4 class="fw-500 fs-16-22 text-0e">Para Portugal</h4>
+                        <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
+                    </div>
+                    <div class="d-flex flex-column align-items-start ps-4 pe-3 h-100">
+                        <p class="text-secondary fs-18-32 fw-500 pt-sm-4 mt-2">0.019€ / por Sms</p>
+                        <a class="d-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white mt-2 mt-sm-auto"
+                            href="{{ route('registro') }} " role="button">Registo grátis</a>
+                    </div>
+                    <img class="balloon-tail position-absolute" src="{{ asset('assets/imgs/vectors/balloon-tail.svg') }}"
+                        alt="">
+                </div>
             </div>
         </div>
     </section>

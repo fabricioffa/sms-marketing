@@ -5,10 +5,10 @@
 @include('includes.light-navbar')
 
 @section('banner')
-    <section class="bg-fa pt-6 pb-lg-6">
-        <div class="container pt-4 pt-lg-5 mt-lg-5">
+    <section class="bg-white pt-6 pb-lg-6">
+        <div class="container pt-4 pt-lg-6 mt-lg-5 pb-5 pb-lg-6">
             <div class="d-flex flex-column flex-lg-row">
-                <header class="font-space-grotesk text-center text-lg-start text-0e">
+                <header class="font-space-grotesk text-center text-lg-start text-0e pb-5 pb-lg-0">
                     <h1 class="fs-36-50 fw-bold ls-1 mb-3">O envio de SMS por
                         ROTAS
                         SIM
@@ -18,27 +18,25 @@
                         diretamente ou insira números de teste para os quais a campanha será direcionada.</p>
                 </header>
 
-                <img class="d-block col-12 col-sm-10 col-lg-5 mt-5 mt-lg-0 mx-auto"
-                    src="{{ asset('assets/imgs/banners/rotas-sim.svg') }}" alt="">
-                {{-- <div class="col-11 col-lg-5 text-ballon bg-white balloon-shadow rounded-10 font-archivo position-relative mx-auto mx-lg-0 pt-3 pb-4">
+                <div class="banner-balloon col-sm-10 col-md-8 col-lg-5 align-self-lg-end bg-white rounded-10 font-archivo position-relative mx-auto mx-lg-0 pt-3 pb-4 my-5 mb-lg-0 mt-lg-6">
                     <div class="d-flex justify-content-between border-bottom border-color-b6  ps-4 pe-3 pb-2">
-                        <h4 class="fw-500 fs-18-22 text-0e">Para Portugal</h4>
-                        <img src="{{ asset('assets/imgs/icons/flags/portugal-small.svg') }}" alt="Bandeira de Portugal">
+                        <h4 class="fw-500 fs-16-22 text-0e">Para Espanha</h4>
+                        <img src="{{ asset('assets/imgs/icons/flags/spain-small.svg') }}" alt="Bandeira da Espanha">
                     </div>
-                    <div class=" ps-4 pe-3">
-                        <p class="text-secondary fs-20-32 fw-500 pt-4 mt-2">0.019€ / por Sms</p>
-                        <a class="d-inline-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white btn-padding mt-5"
-                            href="{{ route('registro') }}">Registo grátis</a>
+                    <div class="d-flex flex-column align-items-start ps-4 pe-3 h-100">
+                        <p class="text-secondary fs-18-32 fw-500 pt-sm-4 mt-2">0.019€ / por Sms</p>
+                        <a class="d-block bg-secondary rounded-4 fs-19 text-decoration-none fw-500 text-white mt-2 mt-sm-auto"
+                            href="{{ route('registro') }} " role="button">Registo grátis</a>
                     </div>
-                    <img class="position-absolute balloon-tail" src="{{ asset('assets/imgs/vectors/balloon-tail.svg') }}" alt="">
-                </div> --}}
+                    <img class="balloon-tail position-absolute" src="{{ asset('assets/imgs/vectors/balloon-tail.svg') }}" alt="">
+                </div>
             </div>
         </div>
     </section>
 @endsection
 
 @section('content')
-    <section class="bg-fa font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
+    <section class="bg-white font-space-grotesk pt-4 pt-lg-5 pb-4 pb-lg-0">
         <div class="container pt-5 pt-lg-0 pb-4 pb-lg-0 gx-3">
 
             <div class="bg-edeef0 rounded-12 rounded-lg-30 p-4 p-md-5">
@@ -180,7 +178,7 @@
 
     </section>
 
-    <section class="bg-fa font-space-grotesk pt-lg-5 pb-5 pb-lg-6 mb-4">
+    <section class="bg-white font-space-grotesk pt-lg-5 pb-5 pb-lg-6 mb-4">
         <div class="container pt-3 pt-lg-5 pb-4 pb-lg-6 mb-5 gx-3">
 
             <div class="bg-edeef0 rounded-12 rounded-lg-30 p-4 p-md-5">
