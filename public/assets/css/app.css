@@ -11335,15 +11335,28 @@ textarea.form-control-lg {
   content: url("/assets/imgs/vectors/dark-down-caret.svg");
 }
 
-.checked::before {
+.marked::before {
   content: url("/assets/imgs/vectors/elipse-secondary.svg");
   position: absolute;
-  left: -3px;
+  left: -10px;
   top: 41%;
 }
+@media (min-width: 992px) {
+  .marked::before {
+    left: -3px;
+  }
+}
 
-.bg-primary .dropdown-item:hover {
+aside.bg-primary .dropdown-item:hover {
   color: #141415 !important;
+}
+
+.navbar-dark .navbar-toggler-icon.custom-color {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler-icon.custom-color {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 20, 21, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 footer img {
