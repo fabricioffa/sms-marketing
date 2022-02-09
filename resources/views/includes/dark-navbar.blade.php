@@ -12,27 +12,27 @@
                 <ul class="navbar-nav gap-4 fw-500 align-items-baseline font-space-grotesk">
                     <li class="nav-item dropdown">
                         <a class="nav-link position-relative dropdown-toggle text-white
-                        {{ in_array( request()->path(), ['homepage', 'em-massa', 'para-empresa', 'rotas-sim', 'sem-restricoes']) ? 'marked' : null }}" id="navbarDropdown" role="button"
+                        {{ request()->route()->named(['home*', 'sms-marketing*']) ? 'marked' : null }}" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             SMS Marketing
                         </a>
                         <ul class="dropdown-menu bg-primary rounded-10" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item text-white" href="{{ route('em-massa') }}">SMS em Massa</a>
+                            <li><a class="dropdown-item text-white" href="{{ route('sms-marketing.em-massa') }}">SMS em Massa</a>
                             </li>
-                            <li><a class="dropdown-item text-white" href="{{ route('para-empresa') }}">SMS massivos
+                            <li><a class="dropdown-item text-white" href="{{ route('sms-marketing.para-empresa') }}">SMS massivos
                                     para empresas</a></li>
-                            <li><a class="dropdown-item text-white" href="{{ route('rotas-sim') }}">SMS por Rotas
+                            <li><a class="dropdown-item text-white" href="{{ route('sms-marketing.rotas-sim') }}">SMS por Rotas
                                     SIM</a></li>
-                            <li><a class="dropdown-item text-white" href="{{ route('sem-restricoes') }}">SMS sem
+                            <li><a class="dropdown-item text-white" href="{{ route('sms-marketing.sem-restricoes') }}">SMS sem
                                     Restrições</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative text-white {{ request()->path() == 'apis' ? 'marked' : null }}" href="{{ route('apis') }}" tabindex="-1"
+                        <a class="nav-link position-relative text-white {{ request()->route()->named('apis') ? 'marked' : null }}" href="{{ route('apis') }}" tabindex="-1"
                             aria-disabled="true">Apis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative text-white font-archivo {{ request()->path() == 'precos' ? 'marked' : null }}" href="{{ route('precos') }}">Preços</a>
+                        <a class="nav-link position-relative text-white font-archivo {{ request()->route()->named('precos') ? 'marked' : null }}" href="{{ route('precos') }}">Preços</a>
                     </li>
                     <a class="bg-secondary btn-padding text-white  text-decoration-none rounded-4"
                         href="{{ route('registro') }}" role="button">Registro</a>

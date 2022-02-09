@@ -17,21 +17,23 @@ Route::get('/', function () {
     return view('homepage');
 })->name('homepage');
 
-Route::get('em-massa', function () {
-    return view('em-massa');
-})->name('em-massa');
+Route::name('sms-marketing.')->group(function() {
+    Route::get('em-massa', function () {
+        return view('em-massa');
+    })->name('em-massa');
 
-Route::get('para-empresa', function () {
-    return view('para-empresa');
-})->name('para-empresa');
+    Route::get('para-empresa', function () {
+        return view('para-empresa');
+    })->name('para-empresa');
 
-Route::get('rotas-sim', function () {
-    return view('rotas-sim');
-})->name('rotas-sim');
+    Route::get('rotas-sim', function () {
+        return view('rotas-sim');
+    })->name('rotas-sim');
 
-Route::get('sem-restricoes', function () {
-    return view('sem-restricoes');
-})->name('sem-restricoes');
+    Route::get('sem-restricoes', function () {
+        return view('sem-restricoes');
+    })->name('sem-restricoes');
+});
 
 Route::get('apis', function () {
     return view('apis');
